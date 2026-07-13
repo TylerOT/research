@@ -3,746 +3,350 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Market Analysis - Week of July 13, 2026 | TylerOT Research</title>
+<title>Market Outlook - July 13, 2026 | TylerOT Research</title>
+<meta name="description" content="Cross-asset outlook: bias, targets and time windows across indices, metals, energy, currencies and US equities.">
 <style>
   :root{--paper:#FBFAF6;--ink:#151F2B;--mut:#5D6B79;--rule:#DAD6CB;
         --up:#177A4C;--dn:#B23A2E;--amb:#BD8A2F;--panel:#F3F1EA;--gold:#8a6d1d}
   *{box-sizing:border-box}
   body{margin:0;background:var(--paper);color:var(--ink);
-       font:15px/1.5 -apple-system,"Segoe UI",Roboto,Arial,sans-serif}
-  .wrap{max-width:1060px;margin:0 auto;padding:44px 26px 90px}
+       font:15px/1.55 -apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+  .wrap{max-width:980px;margin:0 auto;padding:40px 24px 80px}
   h1,h2,h3{font-family:Georgia,serif;margin:0}
-  h1{font-size:42px;line-height:1.06}
-  h2{font-size:25px;border-bottom:3px solid var(--ink);padding-bottom:8px;margin-bottom:4px}
-  h3{font-size:17px;margin:18px 0 6px}
+  h1{font-size:36px;line-height:1.08}
+  h2{font-size:23px;border-bottom:3px solid var(--ink);padding-bottom:8px;margin-bottom:6px}
   .kick{font:700 11px/1 ui-monospace,monospace;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
-  .sub{color:var(--mut);font-size:16px;max-width:760px;margin-top:12px}
-  section{margin-top:52px}
+  .byline{font:12px ui-monospace,monospace;color:var(--mut);margin-top:12px}
+  section{margin-top:46px}
   table{border-collapse:collapse;width:100%;font:12.5px/1.45 ui-monospace,Menlo,monospace;margin-top:10px}
   th{font:700 10.5px ui-monospace,monospace;letter-spacing:.06em;color:var(--mut);text-align:left;
      border-bottom:2px solid var(--ink);padding:6px 8px;text-transform:uppercase}
-  td{border-bottom:1px solid var(--rule);padding:5px 8px;vertical-align:top}
-  tr.buy  td:first-child{border-left:4px solid var(--up)}
-  tr.sell td:first-child{border-left:4px solid var(--dn)}
-  tr.hold td:first-child{border-left:4px solid #B9B4A8}
-  .b{color:var(--up);font-weight:700}.s{color:var(--dn);font-weight:700}
-  .badge{font:700 10px ui-monospace,monospace;padding:2px 6px;border-radius:3px;color:#fff;margin-left:6px}
-  .badge.buy{background:var(--up)}.badge.sell{background:var(--dn)}.badge.watch{background:#8a8a85}
-  .hot{color:#C4451C;font-weight:700}.td{color:#7A4FB0;font-weight:700}
-  .lede{font-size:17px;max-width:820px}
-  .note{color:var(--mut);font-size:13px;margin-top:8px;max-width:840px}
-  figure{margin:24px 0 4px}
-  figcaption{font:11.5px ui-monospace,monospace;color:var(--mut);margin-top:8px}
-  svg text{font-family:ui-monospace,Menlo,monospace}
-  .callout{background:var(--panel);border-left:4px solid var(--gold);padding:14px 18px;margin:18px 0;max-width:840px}
-  .callout b{font-family:Georgia,serif}
-  .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-  @media(max-width:760px){.cols{grid-template-columns:1fr}}
-  .stock{border:1px solid var(--rule);border-left:4px solid #B9B4A8;border-radius:5px;
-        padding:10px 14px;margin:10px 0;background:#fff}
-  .stock.buy{border-left-color:var(--up)}.stock.sell{border-left-color:var(--dn)}
-  .sh{font-size:14px}.ch{font:11.5px ui-monospace,monospace;color:var(--mut);margin:6px 0 4px}
-  .vd{font-size:13px;max-width:900px}
-  .fine{font-size:12px;color:var(--mut);border-top:1px solid var(--rule);margin-top:56px;padding-top:14px;max-width:820px}
-  .legend{font:12px ui-monospace,monospace;background:var(--panel);padding:10px 14px;border-radius:5px;margin-top:14px}
+  td{border-bottom:1px solid var(--rule);padding:5px 8px}
+  tr.b td:first-child{border-left:4px solid var(--up)}
+  tr.s td:first-child{border-left:4px solid var(--dn)}
+  .lede{font-size:16.5px;max-width:800px}
+  .note{color:var(--mut);font-size:13px;margin-top:8px;max-width:820px}
+  .callout{background:var(--panel);border-left:4px solid var(--gold);padding:13px 17px;margin:16px 0;max-width:820px}
+  .fine{font-size:12px;color:var(--mut);border-top:1px solid var(--rule);margin-top:50px;padding-top:14px}
 </style>
 </head>
 <body>
-<div style="background:#151F2B;color:#FBFAF6;padding:14px 20px;text-align:center;
-            font:700 13px/1.6 -apple-system,'Segoe UI',Roboto,Arial,sans-serif;letter-spacing:.02em">
-<b>DISCLAIMER:</b> This publication is independent market commentary and opinion, provided for informational
-and educational purposes only. It is <b>NOT financial, investment, legal or tax advice</b>, not a recommendation
-or solicitation to buy or sell any security, derivative, currency or commodity, and it is not tailored to any
-person's circumstances. Markets involve substantial risk of loss, including total loss; past performance and
-statistical patterns do not guarantee future results. The author may hold positions in instruments discussed.
-Do your own research and consult a licensed financial advisor before making any investment decision.
-By reading further you accept full responsibility for your own decisions.
+<div style="background:#151F2B;color:#FBFAF6;padding:12px 20px;text-align:center;
+            font:700 12.5px/1.6 -apple-system,'Segoe UI',Roboto,Arial,sans-serif">
+<b>DISCLAIMER:</b> Independent market commentary and opinion for informational purposes only.
+<b>NOT financial or investment advice.</b> No recommendation or solicitation to trade any instrument.
+Trading involves substantial risk of loss. Consult a licensed financial advisor. You are solely
+responsible for your own decisions.
+</div>
+<div style="background:#3d3527;color:#FBFAF6;padding:9px 20px;text-align:center;
+            font:12px/1.5 -apple-system,'Segoe UI',Roboto,Arial,sans-serif">
+<b>DATA NOTE:</b> All prices in this report are from a CFD data feed provided by <b>Ava Trade Ltd</b>.
+CFD quotes can differ from official exchange prices - real stock, index and futures levels may vary from
+the levels shown here by the prevailing basis and provider spread, and may not match other data sources.
 </div>
 <div class="wrap">
 
-<div class="kick">Global Cross-Asset Strategy &middot; Private Desk Edition</div>
-<div style="font:12px ui-monospace,monospace;color:var(--mut);margin-bottom:10px">
-July 12, 2026 &nbsp;&middot;&nbsp; Author: <b>TylerOT</b> &nbsp;&middot;&nbsp; <span style="color:var(--gold)">&#120143; @ot_tyler</span></div>
-<h1>MARKET ANALYSIS<br><span style="font-size:26px">Week of July 13, 2026</span><br><span style="font-size:24px;color:var(--mut)">One Wave Through 164 Markets - Sectors, FX, Stocks, and the Road to January 2027</span></h1>
-<p class="sub">Full-universe scan: 164 instruments (VIX included) x 7 timeframes, histories to 1988. Every level below derives from
-each market's own swing structure; every conviction marker is statistically validated on 53,000 pooled swings
-(velocity-flagged legs resolve +31% larger on H1, +33% on H4, +63% on D1, positive on 85-89% of instruments).</p>
-<div class="legend"><b>Legend:</b> <span class="hot">HOT</span> = top-quartile velocity into the pivot (validated magnitude edge) &middot;
-<span class="td">TD</span> = DeMark 9/13 exhaustion stamped at the pivot &middot; <b>EXP</b> = median next-swing for that symbol's regime &middot;
-<b>TARGET</b> = pivot &#177; EXP &middot; <b>CYCLE</b> = median days between structural turns (time yardstick) &middot;
-P<i>n</i> = drought percentile (P0 = completions just restarted = regime change)</div>
+<div class="kick">Cross-Asset Outlook</div>
+<h1>Market Outlook<br><span style="font-size:22px;color:var(--mut)">July 13, 2026 - Bias, Targets and Time Windows</span></h1>
+<div class="byline">Author: <b>TylerOT</b> &nbsp;&middot;&nbsp; &#120143; @ot_tyler &nbsp;&middot;&nbsp; Published July 13, 2026</div>
+<p class="lede" style="margin-top:18px">The picture is unusually one-sided: global equity indices carry fresh tops almost without exception while metals and energy
+carry fresh bottoms almost without exception, the dollar is the weakest structure on the board, and the
+internal clocks of more than 150 markets point at the same two dates: a first tell on <b>July 26-27</b> and
+the decisive window in <b>September</b>. Every call below is published with its invalidation price, and the
+next edition will grade this one line by line.</p>
 
-<!-- ================= I. DASHBOARD ================= -->
 <section>
-<h2>I. The Dashboard - What the Whole Universe Says</h2>
-<figure>
-<svg viewBox="0 0 980 240" width="100%">
-  <text x="10" y="20" font-size="13" font-weight="700" fill="#151F2B">D1 STRUCTURE BREADTH - % OF CLASS THAT HAS TOPPED</text>
-  <!-- bars: indices 81, fx-usd-down 81, us stocks 57, eu stocks 40, commodities 35 -->
-  <g font-size="12">
-    <text x="10" y="52" fill="#5D6B79">GLOBAL INDICES (16)</text>
-    <rect x="230" y="40" width="486" height="16" fill="#B23A2E"/><text x="724" y="53" fill="#B23A2E" font-weight="700">81% topped</text>
-    <text x="10" y="82" fill="#5D6B79">FX PAIRS vs USD (21)</text>
-    <rect x="230" y="70" width="486" height="16" fill="#B23A2E"/><text x="724" y="83" fill="#B23A2E" font-weight="700">81% lean dollar-DOWN</text>
-    <text x="10" y="112" fill="#5D6B79">US STOCKS (46)</text>
-    <rect x="230" y="100" width="342" height="16" fill="#C4451C"/><text x="580" y="113" fill="#C4451C" font-weight="700">57% topped &middot; 34 pivots &lt; 21 days</text>
-    <text x="10" y="142" fill="#5D6B79">EU STOCKS (15)</text>
-    <rect x="230" y="130" width="240" height="16" fill="#BD8A2F"/><text x="478" y="143" fill="#BD8A2F" font-weight="700">40% topped - basing</text>
-    <text x="10" y="172" fill="#5D6B79">COMMODITIES (17)</text>
-    <rect x="230" y="160" width="210" height="16" fill="#177A4C"/><text x="448" y="173" fill="#177A4C" font-weight="700">35% topped - 65% BOTTOMING</text>
-  </g>
-  <text x="10" y="215" font-size="12.5" fill="#151F2B" font-weight="700">TOP-DATE HISTOGRAM: Jun wk3: 6 tops &rarr; Jun wk4-5: 6 &rarr; JUL WEEK 1: 19 TOPS - the distribution week.</text>
-  <text x="10" y="232" font-size="12" fill="#5D6B79">Financial assets exhaust as hard assets ignite. This inversion is the whole report in one picture.</text>
-</svg>
-<figcaption>Fig. 1 - Breadth by asset class, latest daily structure. The equity/commodity mirror is the regime.</figcaption>
-</figure>
-
-<div class="callout"><b>The three sentences that matter.</b> Global equities completed synchronized distribution
-between June 15 and July 7, laggards and defensives last, with July week-1 alone printing 19 exhaustion tops.
-The dollar's rebound failed June 24 at the 42% line while gold, silver, platinum, crude, Brent, gasoline and
-heating oil all printed velocity or DeMark-stamped bottoms within nine sessions. Money is leaving paper and
-entering things you can drop on your foot - and the September 5-28 window is when every independent clock
-says the move accelerates.</div>
-</section>
-
-<!-- ================= II. COMMODITIES ================= -->
-<section>
-<h2>II. Commodities - The Long Side of the World</h2>
-
-<h3>Energy - coordinated bottom, the strongest sector-level signal in the report</h3>
+<h2>I. The Bias Board</h2>
 <table>
-<tr><th>Market</th><th>Turn</th><th>Pivot</th><th>Conviction</th><th>Target (EXP)</th><th>Time yardstick</th><th>Invalidation</th><th>Call</th></tr>
-<tr class="buy"><td>CRUDE OIL</td><td class="b">B &middot; Jul 2</td><td>67.03</td><td><span class="td">TD</span> &middot; P0</td><td><b>86.7</b> (+29%) then 93.2</td><td>cycle ~96d &rarr; Oct window</td><td>&lt; 67.03</td><td><b>BUY</b> dips</td></tr>
-<tr class="buy"><td>BRENT</td><td class="b">B &middot; Jul 2</td><td>69.43</td><td>P0</td><td><b>88.5</b> (+27%)</td><td>~100d &rarr; mid-Oct</td><td>&lt; 69.43</td><td><b>BUY</b> with WTI</td></tr>
-<tr class="buy"><td>GASOLINE</td><td class="b">B &middot; Jun 24</td><td>2.8253</td><td><span class="hot">HOT</span></td><td><b>4.05</b> (+43%)</td><td>~90d &rarr; late Sep</td><td>&lt; 2.825</td><td><b>BUY</b> - biggest EXP in energy</td></tr>
-<tr class="buy"><td>HEATING OIL</td><td class="b">B &middot; Jun 18</td><td>3.0395</td><td><span class="hot">HOT</span></td><td><b>4.17</b> (+37%)</td><td>~76d &rarr; early Sep</td><td>&lt; 3.04</td><td><b>BUY</b></td></tr>
-<tr class="sell"><td>NATURAL GAS</td><td class="s">S &middot; Jun 1</td><td>3.387</td><td><span class="hot">HOT</span> &middot; P40</td><td><b>1.74</b> (-49%)</td><td>~54d cycle, mid-move</td><td>&gt; 3.387</td><td><b>SELL</b> rallies - the sector's odd man out (storage glut trade)</td></tr>
-</table>
-<p class="note">Four of five products bottomed inside six sessions with velocity or exhaustion stamps; the distillates carry
-HOT flags meaning their historical follow-through runs 37-43%. Energy equities confirm: XLE bottomed Jul 1 (P0, target 63.3, +20%),
-Chevron and Exxon both carry fresh B structure (targets 197 / 158).</p>
-
-<h3>Precious &amp; base metals - the crashed leaders turning first</h3>
-<table>
-<tr><th>Market</th><th>Turn</th><th>Pivot</th><th>Conviction</th><th>Target (EXP)</th><th>Time yardstick</th><th>Invalidation</th><th>Call</th></tr>
-<tr class="buy"><td>GOLD</td><td class="b">B &middot; Jun 30</td><td>3,942.61</td><td><span class="td">TD</span> &middot; P1</td><td><b>4,500</b> (+14%); path 4,440-4,460 &rarr; 4,514 &rarr; 4,740-4,880 by late Jan '27</td><td>decision Sep 5-28</td><td>&lt; 3,943</td><td><b>BUY</b> dips &gt; 4,096</td></tr>
-<tr class="buy"><td>SILVER</td><td class="b">B &middot; Jun 24</td><td>55.58</td><td><span class="hot">HOT</span></td><td><b>76.6</b> (+38%); rungs 64 &rarr; 72.25 &rarr; 81</td><td>~75d &rarr; mid-Sep</td><td>&lt; 55.58</td><td><b>BUY</b> - highest octane on the board</td></tr>
-<tr class="buy"><td>PLATINUM</td><td class="b">B &middot; Jul 1</td><td>1,537.6</td><td><span class="hot">HOT</span> &middot; P2</td><td><b>1,945</b> (+27%)</td><td>~84d &rarr; late Sep</td><td>&lt; 1,538</td><td><b>BUY</b> - joins the metals wave</td></tr>
-<tr class="buy"><td>PALLADIUM</td><td class="b">B &middot; Jun 24</td><td>1,152</td><td>P7</td><td><b>1,424</b> (+24%)</td><td>~77d</td><td>&lt; 1,152</td><td><b>BUY</b> smaller size</td></tr>
-<tr class="sell"><td>COPPER</td><td class="s">S &middot; May 13</td><td>6.71</td><td>fresh TD lower high Jul 10</td><td><b>5.33</b> (-21%); break 6.149 &rarr; 5.802 &rarr; 5.521</td><td>~88d &rarr; Oct</td><td>&gt; 6.76</td><td><b>SELL</b> - the equity canary, trades with stocks not metals</td></tr>
-</table>
-<p class="note">GDX (gold miners) bottomed Jul 8 at 71.83, target 90.5 (+26%) - the leveraged expression of the gold call.
-The precious complex now counts four coordinated bottoms in five sessions (silver, palladium Jun 24; gold Jun 30; platinum Jul 1). </p>
-
-<h3>Agriculture - softs distributing, grains basing</h3>
-<table>
-<tr><th>Market</th><th>Turn</th><th>Pivot</th><th>Conviction</th><th>Target</th><th>Call</th></tr>
-<tr class="sell"><td>COCOA</td><td class="s">S &middot; Jul 9</td><td>6,473</td><td><span class="hot">HOT</span> &middot; P0</td><td><b>4,699</b> (-27%)</td><td><b>SELL</b> - freshest short in ags</td></tr>
-<tr class="sell"><td>COFFEE</td><td class="s">S &middot; Jul 6</td><td>356.55</td><td><span class="td">TD</span> &middot; P0</td><td><b>243.7</b> (-32%)</td><td><b>SELL</b> rallies</td></tr>
-<tr class="sell"><td>WHEAT</td><td class="s">S &middot; May 14</td><td>687.75</td><td>P25</td><td>531.8 (-23%)</td><td>SELL, older signal</td></tr>
-<tr class="sell"><td>COTTON</td><td class="s">S &middot; May 13</td><td>88.75</td><td>P20</td><td>69.0 (-22%)</td><td>SELL, older signal</td></tr>
-<tr class="buy"><td>CORN</td><td class="b">B &middot; Jun 25</td><td>403.5</td><td>P3</td><td><b>476.7</b> (+18%)</td><td>BUY quiet base</td></tr>
-<tr class="buy"><td>SOYBEAN</td><td class="b">B &middot; Jun 15</td><td>1,101.75</td><td>P2</td><td><b>1,270</b> (+15%)</td><td>BUY quiet base</td></tr>
-<tr class="hold"><td>SUGAR</td><td class="b">B &middot; Apr 17</td><td>13.24</td><td>P51 stale</td><td>15.85</td><td>HOLD/watch</td></tr>
+<tr><th>Group</th><th>Lean</th><th>Reading</th></tr>
+<tr class="s"><td>Global indices</td><td>79% topped</td><td>US, Germany, France, UK, Japan, Switzerland all carry fresh tops; only Hong Kong and China lean up</td></tr>
+<tr class="b"><td>Metals</td><td>80% bottomed</td><td>Gold, silver, platinum, palladium turning together; copper is the exception and trades with equities</td></tr>
+<tr class="b"><td>Energy</td><td>80% bottomed</td><td>Crude, Brent, gasoline, heating oil coordinated; natural gas the lone short</td></tr>
+<tr class="s"><td>US dollar</td><td>8 of 8 pairs bearish</td><td>Every major pair leans dollar-down; index objective 96.3</td></tr>
+<tr class="s"><td>US equities</td><td>55% topped</td><td>Financials and defensives distributed together in early July; mega-cap quality still basing and is not part of the short view here</td></tr>
 </table>
 </section>
 
-<!-- ================= III. FX ================= -->
 <section>
-<h2>III. Currencies - The Strength Ladder and the Pair Book</h2>
-<figure>
-<svg viewBox="0 0 980 300" width="100%">
-  <text x="10" y="20" font-size="13" font-weight="700" fill="#151F2B">CURRENCY STRENGTH - % OF EACH CURRENCY'S PAIRS WITH BULLISH D1 STRUCTURE</text>
-  <g font-size="12">
-    <text x="10"  y="55" font-weight="700">CAD</text><rect x="60" y="43" width="600" height="16" fill="#177A4C"/><text x="668" y="56" fill="#177A4C" font-weight="700">100% (7/7)</text>
-    <text x="10"  y="85" font-weight="700">AUD</text><rect x="60" y="73" width="516" height="16" fill="#177A4C"/><text x="584" y="86" fill="#177A4C" font-weight="700">86%</text>
-    <text x="10"  y="115" font-weight="700">NZD</text><rect x="60" y="103" width="426" height="16" fill="#3d8f63"/><text x="494" y="116" fill="#3d8f63" font-weight="700">71%</text>
-    <text x="10"  y="145" font-weight="700">JPY</text><rect x="60" y="133" width="342" height="16" fill="#7fa88f"/><text x="410" y="146" fill="#5D6B79" font-weight="700">57%</text>
-    <text x="10"  y="175" font-weight="700">CHF</text><rect x="60" y="163" width="228" height="16" fill="#c9a06a"/><text x="296" y="176" fill="#8a6d1d" font-weight="700">38%</text>
-    <text x="10"  y="205" font-weight="700">GBP</text><rect x="60" y="193" width="216" height="16" fill="#c2704f"/><text x="284" y="206" fill="#B23A2E" font-weight="700">36%</text>
-    <text x="10"  y="235" font-weight="700">EUR</text><rect x="60" y="223" width="186" height="16" fill="#c2704f"/><text x="254" y="236" fill="#B23A2E" font-weight="700">31%</text>
-    <text x="10"  y="265" font-weight="700">USD</text><rect x="60" y="253" width="114" height="16" fill="#B23A2E"/><text x="182" y="266" fill="#B23A2E" font-weight="700">19% - weakest structure in the book (21 pairs)</text>
-  </g>
-</svg>
-<figcaption>Fig. 2 - The FX board is a commodity-currency bull market: the resource bloc (CAD/AUD/NZD) owns the top,
-the funding/reserve bloc (USD/EUR/GBP) owns the bottom. Identical message to the commodity section, spoken in currency.</figcaption>
-</figure>
-
-<h3>The majors - direction, targets, dates</h3>
+<h2>II. Commodities</h2>
 <table>
-<tr><th>Pair</th><th>Turn</th><th>Pivot</th><th>Conviction</th><th>Target (EXP)</th><th>Waypoints &amp; dates</th><th>Invalidation</th></tr>
-<tr class="buy"><td>EURUSD</td><td class="b">B &middot; Jun 24</td><td>1.1324</td><td><span class="td">TD</span> (D1+W1)</td><td><b>1.1870</b> (+4.8%)</td><td>1.1613-1.1664 by Sep 22 &middot; 1.1703 Oct 24 &middot; 1.2082-1.21 late Jan '27</td><td>&lt; 1.1324</td></tr>
-<tr class="buy"><td>GBPUSD</td><td class="b">B &middot; Jun 24</td><td>1.31396</td><td><span class="td">TD</span></td><td><b>1.4051</b> (+6.9%)</td><td>with EURUSD; cable rallies on USD weakness despite GBP's own softness</td><td>&lt; 1.3140</td></tr>
-<tr class="sell"><td>USDJPY</td><td class="s">S &middot; Jul 1</td><td>162.835</td><td>fresh</td><td><b>151.2</b> (-7.1%)</td><td>the yen leg of the dollar decline; pairs with the JGB long</td><td>&gt; 162.84</td></tr>
-<tr class="buy"><td>AUDUSD</td><td class="b">B &middot; Jun 30</td><td>0.68648</td><td>fresh</td><td><b>0.7376</b> (+7.4%)</td><td>strongest-vs-weakest expression of the whole FX ladder</td><td>&lt; 0.6865</td></tr>
-<tr class="sell"><td>USDCAD</td><td class="s">S &middot; Jun 25</td><td>1.42473</td><td>-</td><td><b>1.3515</b> (-5.1%)</td><td>CAD is the #1 currency on the board + long-crude tailwind</td><td>&gt; 1.4247</td></tr>
-<tr class="sell"><td>USDCHF</td><td class="s">S &middot; Jun 24</td><td>0.8139</td><td><span class="td">TD</span></td><td><b>0.7679</b> (-5.7%)</td><td>safe-haven bid + dollar decline</td><td>&gt; 0.8139</td></tr>
-<tr class="buy"><td>NZDUSD</td><td class="b">B &middot; Jun 24</td><td>0.5624</td><td><span class="td">TD</span></td><td><b>0.6017</b> (+7.0%)</td><td>with AUDUSD</td><td>&lt; 0.5624</td></tr>
+<tr><th>Market</th><th>Bias</th><th>Anchor</th><th>Objective</th><th>Window</th><th>Invalidation</th></tr>
+<tr class="b"><td>GOLD</td><td>Long</td><td>3,942.61</td><td><b>4,900 area</b>, first gate 4,203</td><td>gate test late July; objective zone Sep-Jan</td><td>daily close under 3,943 delays the move to a 3,650-3,760 accumulation shelf, destination unchanged</td></tr>
+<tr class="b"><td>SILVER</td><td>Long</td><td>55.58</td><td><b>73</b></td><td>September</td><td>55.58</td></tr>
+<tr class="b"><td>PLATINUM</td><td>Long</td><td>1,537.6</td><td><b>1,956</b></td><td>late September</td><td>1,538</td></tr>
+<tr class="b"><td>CRUDE / BRENT</td><td>Long</td><td>67.03 / 69.43</td><td><b>98 / 103</b></td><td>into October</td><td>the July lows</td></tr>
+<tr class="b"><td>GASOLINE / HEATING OIL</td><td>Long</td><td>2.83 / 3.04</td><td><b>3.93 / 4.14</b></td><td>September</td><td>the June lows</td></tr>
+<tr class="s"><td>NATURAL GAS</td><td>Short</td><td>3.387</td><td><b>1.96</b></td><td>clock expires July 24</td><td>3.387</td></tr>
+<tr class="s"><td>COPPER</td><td>Short</td><td>6.71</td><td><b>4.44</b>; trigger 6.149</td><td>early August clock</td><td>6.76</td></tr>
+<tr class="s"><td>COCOA / COFFEE</td><td>Short</td><td>6,473 / 356.6</td><td><b>5,046 / 268</b></td><td>Sep-Oct</td><td>the July highs</td></tr>
 </table>
-
-<h3>Crosses &amp; EM - where the relative value lives</h3>
-<table>
-<tr><th>Pair</th><th>Turn</th><th>Signal</th><th>Target</th><th>Thesis</th></tr>
-<tr class="sell"><td>GBPJPY</td><td class="s">S &middot; Jul 9 @ 218.01</td><td><span class="td">TD</span> &middot; P0</td><td><b>201.8</b> (-7.4%)</td><td>Short the weakest major vs the recovering yen - the premier RV short. GBP tops also vs HUF, ILS (<span class="hot">HOT</span>+<span class="td">TD</span>), CAD, AUD, all Jul 2-9</td></tr>
-<tr class="sell"><td>EURAUD</td><td class="s">S &middot; Jun 30 @ 1.66181</td><td><span class="hot">HOT</span>+<span class="td">TD</span></td><td>-5 to -7%</td><td>Funding bloc vs resource bloc, the ladder trade in one ticker</td></tr>
-<tr class="sell"><td>USDMXN</td><td class="s">S &middot; Jun 24 @ 17.673</td><td><span class="td">TD</span></td><td><b>15.95</b> (-9.7%)</td><td>EM FX strength on the weak dollar; the carry trade returns</td></tr>
-<tr class="buy"><td>USDCNY</td><td class="b">B &middot; May 29 @ 6.7451</td><td><span class="td">TD</span></td><td><b>6.99</b> (+3.6%)</td><td>The exception that proves the thesis: managed CNY weakness while China equities bottom = Beijing easing into the global turn (see Section V)</td></tr>
-</table>
-<p class="note">EURGBP structure (S from Feb) plus GBP's 36% ladder score says the euro out-carries sterling even while
-both fall vs the resource bloc. Skip USDTRY (structure stale) and treat USDZAR's B pivot as idiosyncratic.</p>
-</section>
-
-<!-- ================= IV. STOCKS ================= -->
-<section>
-<h2>IV. Equities by Sector - Buy and Sell Candidates</h2>
-
-<div class="callout"><b>The two stories inside the stock tape.</b> First: the <b>financial complex topped as a unit</b> -
-BofA, Berkshire, Visa, Mastercard, Amex all printed fresh tops July 2-7 (every one at drought P0), with JPM, Goldman
-and Citi already rolled from mid-June. Banks distributing together is the credit-cycle tell. Second: the
-<b>defensive trio (JNJ, P&amp;G, Coca-Cola) exhausted July 7</b>, the same day as the Dow - when the hiding places top,
-the rotation has nowhere left to go. Against that, mega-cap quality (MSFT, AMZN, META, NVDA) printed higher-low
-structure June 25-29: the market's last fortress, and the short book should avoid it until it cracks.</div>
-
-<h3>SELL candidates - fresh distribution, velocity or exhaustion stamped</h3>
-<table>
-<tr><th>Stock</th><th>Sector</th><th>Top</th><th>Pivot</th><th>Signal</th><th>Target (EXP)</th><th>Cycle</th></tr>
-<tr class="sell"><td>#JNJ</td><td>Healthcare</td><td>Jul 7</td><td>269.27</td><td><span class="hot">HOT</span>+<span class="td">TD</span> P0</td><td><b>226</b> (-16%)</td><td>~76d &rarr; late Sep</td></tr>
-<tr class="sell"><td>#PG</td><td>Staples</td><td>Jul 7</td><td>153.35</td><td><span class="hot">HOT</span> P0</td><td><b>124</b> (-19%)</td><td>~68d</td></tr>
-<tr class="sell"><td>#COCA-COLA</td><td>Staples</td><td>Jul 7</td><td>109.39</td><td><span class="td">TD</span> P0</td><td><b>91.4</b> (-16%)</td><td>~66d</td></tr>
-<tr class="sell"><td>#BOA</td><td>Financials</td><td>Jul 7</td><td>60.78</td><td>P0 cluster</td><td><b>43.8</b> (-28%)</td><td>~96d &rarr; Oct</td></tr>
-<tr class="sell"><td>#BERKSHIRE</td><td>Financials</td><td>Jul 7</td><td>512.06</td><td>P0</td><td><b>427.7</b> (-16%)</td><td>~91d</td></tr>
-<tr class="sell"><td>#MASTERCARD</td><td>Financials</td><td>Jul 7</td><td>543.19</td><td>P0</td><td><b>450.7</b> (-17%)</td><td>~62d</td></tr>
-<tr class="sell"><td>#AMERICAN_E</td><td>Financials</td><td>Jul 6</td><td>357.89</td><td>P0</td><td><b>275.4</b> (-23%)</td><td>~79d</td></tr>
-<tr class="sell"><td>#VISA</td><td>Financials</td><td>Jul 2</td><td>361.07</td><td><span class="td">TD</span> P0</td><td>structure short vs 361</td><td>~74d</td></tr>
-<tr class="sell"><td>#ELILILLY</td><td>Healthcare</td><td>Jul 7</td><td>1,247.99</td><td>P0</td><td><b>1,012</b> (-19%)</td><td>~74d</td></tr>
-<tr class="sell"><td>#AMD</td><td>Semis</td><td>Jun 30</td><td>584.18</td><td><span class="hot">HOT</span> P1</td><td>163-300 zone (hot legs here run -49 to -72%)</td><td>~103d</td></tr>
-<tr class="sell"><td>#INTEL</td><td>Semis</td><td>Jun 30</td><td>142.22</td><td><span class="hot">HOT</span></td><td><b>108</b> (-24%)</td><td>~66d</td></tr>
-<tr class="sell"><td>#CAT</td><td>Industrials</td><td>Jun 30</td><td>1,072.48</td><td>P0</td><td><b>820</b> (-24%)</td><td>~86d</td></tr>
-<tr class="sell"><td>#GE</td><td>Industrials</td><td>Jul 2</td><td>382.56</td><td>P0</td><td><b>269</b> (-30%)</td><td>~76d</td></tr>
-<tr class="sell"><td>#TESLA</td><td>Autos/Tech</td><td>May 13</td><td>453.05</td><td><span class="td">TD</span></td><td><b>231</b> (-49%)</td><td>older top, trend already down</td></tr>
-<tr class="sell"><td>#GOOGLE</td><td>Mega tech</td><td>May 18</td><td>408.30</td><td><span class="hot">HOT</span></td><td><b>313</b> (-23%)</td><td>the one mega-cap already broken</td></tr>
-</table>
-
-<h3>BUY candidates - fresh accumulation against the tide</h3>
-<table>
-<tr><th>Stock</th><th>Sector</th><th>Bottom</th><th>Pivot</th><th>Signal</th><th>Target (EXP)</th><th>Cycle</th></tr>
-<tr class="buy"><td>#ADOBE</td><td>Software</td><td>Jun 18</td><td>189.85</td><td><span class="hot">HOT</span>+<span class="td">TD</span></td><td><b>282</b> (+48%)</td><td>~83d &rarr; Oct</td></tr>
-<tr class="buy"><td>#ALIBABA</td><td>China tech</td><td>Jun 26</td><td>92.56</td><td><span class="hot">HOT</span></td><td><b>151</b> (+63%)</td><td>~80d - pairs with the HK/China index call</td></tr>
-<tr class="buy"><td>#AT&amp;T</td><td>Telecom</td><td>Jul 2</td><td>19.88</td><td><span class="hot">HOT</span> P2</td><td><b>24.1</b> (+21%)</td><td>~78d</td></tr>
-<tr class="buy"><td>#DISNEY</td><td>Consumer</td><td>Jul 9</td><td>94.58</td><td>P0 fresh</td><td><b>117.8</b> (+25%)</td><td>~104d</td></tr>
-<tr class="buy"><td>#NIKE</td><td>Consumer</td><td>Jul 1</td><td>40.07</td><td>P7</td><td><b>51.7</b> (+29%)</td><td>~62d</td></tr>
-<tr class="buy"><td>#WAL_MART</td><td>Retail</td><td>Jul 1</td><td>107.14</td><td>P3</td><td><b>127.2</b> (+19%)</td><td>~76d</td></tr>
-<tr class="buy"><td>#CHEVRON / #EXXONMOBIL</td><td>Energy</td><td>Jun 25-30</td><td>165.1 / 134.85</td><td>with crude</td><td><b>197 / 158</b> (+19/17%)</td><td>~90d</td></tr>
-<tr class="buy"><td>#GDX</td><td>Gold miners</td><td>Jul 8</td><td>71.83</td><td>P0</td><td><b>90.5</b> (+26%)</td><td>~81d</td></tr>
-<tr class="buy"><td>#XLE</td><td>Energy ETF</td><td>Jul 1</td><td>52.57</td><td>P0</td><td><b>63.3</b> (+20%)</td><td>~85d</td></tr>
-<tr class="buy"><td>#EWZ</td><td>Brazil</td><td>Jun 8</td><td>33.51</td><td><span class="td">TD</span></td><td><b>42.8</b> (+28%)</td><td>weak-dollar EM beneficiary</td></tr>
-<tr class="buy"><td>_BMW.DE</td><td>EU autos</td><td>Jun 30</td><td>56.96</td><td><span class="hot">HOT</span></td><td><b>73.3</b> (+29%)</td><td>~78d</td></tr>
-<tr class="buy"><td>_DAI.DE</td><td>EU autos</td><td>Jun 29</td><td>42.571</td><td><span class="td">TD</span></td><td><b>54.4</b> (+28%)</td><td>~120d</td></tr>
-<tr class="buy"><td>_STELLAN.FR</td><td>EU autos</td><td>Jul 9</td><td>4.584</td><td><span class="hot">HOT</span> P0</td><td><b>6.79</b> (+48%)</td><td>~110d</td></tr>
-<tr class="buy"><td>_RWE.DE / _TOTAL</td><td>EU energy/util</td><td>Jun 19 / Jul 2</td><td>53.79 / 65.69</td><td><span class="hot">HOT</span> / -</td><td><b>63.5 / 79.3</b> (+18/21%)</td><td>~56-89d</td></tr>
-</table>
-<p class="note">Watchlist (structure long but unconfirmed): MSFT 348.95 &rarr; 428 (+23%), AMZN 225 &rarr; 295 (+31%),
-META 540 &rarr; 702 (+30%), NVDA 190 &rarr; 250 (+32%) - the quality fortress. Hold no shorts here; flip long only if the
-indices resolve their springs upward. EU short side: Siemens (S Jul 3, tgt 226), Deutsche Bank (S Jul 7, tgt 21.5),
-Bayer (S Jul 3, tgt 31.9), Adidas (TD S Jul 6) - the EU long book is autos/energy, not financials/industrials.</p>
-</section>
-
-<!-- ================= V. INDICES & THE ZOOM OUT ================= -->
-<section>
-<h2>V. Global Indices &amp; the Zoomed-Out Map</h2>
-<table>
-<tr><th>Index</th><th>Turn</th><th>Pivot</th><th>Signal</th><th>Target (EXP)</th><th>First waypoint &middot; date</th><th>Invalidation</th></tr>
-<tr class="sell"><td>S&amp;P 500</td><td class="s">S &middot; Jun 15</td><td>7,648.25</td><td>P15</td><td><b>6,524</b> (-15%)</td><td>6,985 &middot; Oct</td><td>&gt; 7,648</td></tr>
-<tr class="sell"><td>NASDAQ 100</td><td class="s">S &middot; Jun 16</td><td>30,973</td><td><span class="hot">HOT</span></td><td><b>24,792</b> (-20%)</td><td>spring: 28,900 vs 30,976 resolves Sep 14-28</td><td>&gt; 30,976</td></tr>
-<tr class="sell"><td>DOW</td><td class="s">S &middot; Jul 7</td><td>53,650</td><td>P2 fresh</td><td><b>47,760</b> (-11%)</td><td>49,666 &middot; Oct 5 &rarr; 45,050-45,224 year-end</td><td>&gt; 53,824</td></tr>
-<tr class="sell"><td>RUSSELL 2000</td><td class="s">S &middot; Jul 1</td><td>3,067.8</td><td><span class="td">TD</span></td><td><b>2,495</b> (-19%)</td><td>2,744 &rarr; 2,544</td><td>&gt; 3,068</td></tr>
-<tr class="sell"><td>GERMANY 40</td><td class="s">S &middot; Jul 6</td><td>26,063.5</td><td>P0</td><td><b>22,725</b> (-13%)</td><td>with US complex</td><td>&gt; 26,064</td></tr>
-<tr class="sell"><td>FRANCE 40 / UK 100</td><td class="s">S &middot; Jul 6-7</td><td>8,568 / 10,764.5</td><td>P0</td><td><b>7,427 / 9,618</b></td><td>with US complex</td><td>&gt; pivots</td></tr>
-<tr class="sell"><td>JAPAN 225</td><td class="s">S &middot; Jun 22</td><td>73,755</td><td><span class="hot">HOT</span>+<span class="td">TD</span></td><td><b>59,187</b> (-20%)</td><td>the strongest index short signal in the set</td><td>&gt; 73,755</td></tr>
-<tr class="buy"><td>HONG KONG 50</td><td class="b">B &middot; Jun 26</td><td>22,517</td><td><span class="hot">HOT</span>+<span class="td">TD</span> P0</td><td><b>28,719</b> (+28%)</td><td>the anti-consensus long</td><td>&lt; 22,517</td></tr>
-<tr class="buy"><td>CHINA A50</td><td class="b">B &middot; Jul 2</td><td>14,645</td><td>P0</td><td><b>17,379</b> (+19%)</td><td>with HK; CNY devaluation = stimulus tell</td><td>&lt; 14,645</td></tr>
-</table>
-
-<h3>Volatility - the coiled spring gets its own chapter</h3>
-<table>
-<tr><th>Market</th><th>State</th><th>Structure</th><th>Signal</th><th>Read</th></tr>
-<tr class="buy"><td>VIX (spot)</td><td>16.8 - compressed</td><td>D1 asleep 126 days (P74) since the Mar 9 spike top at 30.14; weekly quiet 462 days</td><td><b>H1 bottom Jul 10 @ 16.83, <span class="td">TD</span>-stamped; H4 completions restarting (P7)</b></td><td><b>BUY convexity.</b> First accumulation stamps after four months of sleep, printed the same week 19 equities topped. Historical D1 vol swings from structural turns run 43-65%</td></tr>
-<tr class="hold"><td>VXX-family ETNs</td><td>decay products</td><td>the one instrument class where the velocity edge fails (-41%) - structural contango bleed</td><td>-</td><td>Use as the wrapper only, sized for decay; spot VIX obeys the statistics, the ETN does not</td></tr>
-</table>
-<p class="note">Methodological note worth its own line: real VIX validates the velocity edge (+15% H1, +24% H4), proving the
-lone VXXB failure was product structure, not volatility. The law now holds on every genuine market tested - 164 instruments.</p>
-
-<div class="callout"><b>The Asia rotation - the report's most contrarian finding.</b> Japan prints the single
-strongest index sell signal (HOT + TD top, -20% expected) while Hong Kong prints the single strongest index buy
-(HOT + TD bottom, +28% expected) and mainland China confirms with a fresh P0 base - all while USDCNY's managed
-rise says Beijing is easing. Money is not just leaving equities for hard assets; within equities it is crossing
-the East China Sea. Long HK/China vs short Japan is a market-neutral expression with both legs carrying maximum
-conviction stamps, uncorrelated with the US short book.</div>
-
-<figure>
-<svg viewBox="0 0 980 300" width="100%">
-  <text x="10" y="24" font-size="14" font-weight="700" fill="#151F2B">THE MASTER CALENDAR - EVERY MARKET'S CLOCK ON ONE STRIP</text>
-  <!-- axis -->
-  <line x1="50" y1="170" x2="950" y2="170" stroke="#B9B4A8" stroke-width="2"/>
-  <g fill="#8B94A3" font-size="12" text-anchor="middle">
-    <text x="105" y="196">JUL</text><text x="218" y="196">AUG</text><text x="331" y="196">SEP</text>
-    <text x="444" y="196">OCT</text><text x="557" y="196">NOV</text><text x="670" y="196">DEC</text>
-    <text x="783" y="196">JAN '27</text><text x="896" y="196">FEB</text>
-  </g>
-  <g stroke="#E7E4DA" stroke-width="1">
-    <line x1="162" y1="60" x2="162" y2="170"/><line x1="275" y1="60" x2="275" y2="170"/>
-    <line x1="388" y1="60" x2="388" y2="170"/><line x1="501" y1="60" x2="501" y2="170"/>
-    <line x1="614" y1="60" x2="614" y2="170"/><line x1="727" y1="60" x2="727" y2="170"/>
-    <line x1="840" y1="60" x2="840" y2="170"/>
-  </g>
-  <!-- window 1: Jul 26-27 -->
-  <rect x="145" y="150" width="12" height="20" fill="#BD8A2F"/>
-  <text x="151" y="140" font-size="12" fill="#BD8A2F" text-anchor="middle" font-weight="700">Jul 26-27</text>
-  <text x="151" y="222" font-size="11" fill="#5D6B79" text-anchor="middle">first tell</text>
-  <!-- window 2: Sep 5-28 THE WINDOW -->
-  <rect x="296" y="145" width="88" height="25" fill="#BD8A2F"/>
-  <text x="340" y="105" font-size="13" fill="#BD8A2F" text-anchor="middle" font-weight="700">SEP 5-28</text>
-  <text x="340" y="122" font-size="12" fill="#BD8A2F" text-anchor="middle" font-weight="700">THE WINDOW</text>
-  <text x="340" y="222" font-size="11" fill="#5D6B79" text-anchor="middle">gold apex Sep 5 &middot; NDX Sep 14</text>
-  <text x="340" y="238" font-size="11" fill="#5D6B79" text-anchor="middle">EUR Sep 22 &middot; Sep 28 double-count</text>
-  <!-- window 3: Oct 5-30 -->
-  <rect x="420" y="150" width="70" height="20" fill="#5D6B79" opacity=".55"/>
-  <text x="455" y="140" font-size="12" fill="#5D6B79" text-anchor="middle" font-weight="700">Oct 5-30</text>
-  <text x="455" y="222" font-size="11" fill="#5D6B79" text-anchor="middle">first index targets &middot;</text>
-  <text x="455" y="238" font-size="11" fill="#5D6B79" text-anchor="middle">metals objectives</text>
-  <!-- window 4: Nov - mid Dec -->
-  <rect x="545" y="150" width="145" height="20" fill="#5D6B79" opacity=".33"/>
-  <text x="617" y="140" font-size="12" fill="#5D6B79" text-anchor="middle" font-weight="700">Nov - mid-Dec</text>
-  <text x="617" y="222" font-size="11" fill="#5D6B79" text-anchor="middle">correction lows due &middot;</text>
-  <text x="617" y="238" font-size="11" fill="#5D6B79" text-anchor="middle">NDX bull window (if &gt;30,976)</text>
-  <!-- window 5: Late Jan -->
-  <rect x="775" y="145" width="26" height="25" fill="#BD8A2F"/>
-  <text x="788" y="105" font-size="13" fill="#BD8A2F" text-anchor="middle" font-weight="700">LATE JAN '27</text>
-  <text x="788" y="122" font-size="12" fill="#BD8A2F" text-anchor="middle" font-weight="700">completion</text>
-  <text x="788" y="222" font-size="11" fill="#5D6B79" text-anchor="middle">gold ~4,770 &middot; EUR ~1.21</text>
-  <text x="788" y="238" font-size="11" fill="#5D6B79" text-anchor="middle">NDX 33.5K stretch &middot; Dow 45K shelf</text>
-  <text x="10" y="278" font-size="11.5" fill="#5D6B79">Per-symbol median cycles (54-120 days from the late-June/July pivots) independently cluster the next turns into Sep-Oct - the same window the price geometry picks.</text>
-</svg>
-<figcaption>Fig. 3 - Time. The September window is where the tell becomes the trend.</figcaption>
-</figure>
-
-<h3>Where markets are heading - the zoomed-out narrative</h3>
-<p class="lede">Read the whole board at once and the story is one paragraph. <b>The dollar's decade of dominance is
-cracking</b> (19% bullish structure, rebound dead at the 42% line): that is the sun everything else orbits. Weak
-dollar makes hard assets the destination (the entire energy and precious complex bottomed in nine sessions with
-statistical thrust behind it), makes resource currencies the FX winners (CAD/AUD/NZD own the ladder), makes EM
-and China investable again (HK/A50/EWZ/MXN all turning as Beijing eases), and pulls the rug from richly-valued
-paper (19 equity tops in the first week of July, banks and defensives last - the classic end of distribution).
-The projected sequence: <b>a July 26-27 tell, September 5-28 as the global inflection window, first downside
-objectives on the indices and first upside objectives on the metals into October, correction lows and commodity
-consolidation Nov-Dec, and completion targets clustering in late January 2027</b> - gold ~4,770, euro ~1.21, the
-Dow at its 45,000 shelf. If the springs resolve the other way (Nasdaq &gt; 30,976, Dow &gt; 53,824), the equity
-melt-up gets one more leg into November and the hard-asset longs simply get a slower, choppier version of the
-same destination - the dollar structure says the direction; the springs only decide the sequencing.</p>
-</section>
-
-<!-- ================= VI. PLAYBOOK ================= -->
-<section>
-<h2>VI. The Playbook - Positions, Sizing, Falsifiers</h2>
-<div class="cols">
-<div>
-<h3>Live now (Theme 1: dollar-short / hard-assets)</h3>
-<table>
-<tr><th>Trade</th><th>Level</th><th>Stop</th></tr>
-<tr class="buy"><td>Long GOLD</td><td>dips &gt; 4,096</td><td>3,943</td></tr>
-<tr class="buy"><td>Long SILVER</td><td>&gt; 55.58, add &gt; 64</td><td>55.58</td></tr>
-<tr class="buy"><td>Long PLATINUM</td><td>&gt; 1,538</td><td>1,538</td></tr>
-<tr class="buy"><td>Long CRUDE/BRENT</td><td>&gt; 67 / 69.4</td><td>the lows</td></tr>
-<tr class="buy"><td>Long EURUSD / AUDUSD</td><td>&gt; 1.1324 / 0.6865</td><td>the lows</td></tr>
-<tr class="sell"><td>Short DXY</td><td>&lt; 101.55</td><td>101.55</td></tr>
-<tr class="buy"><td>Long XLE / GDX / CVX / XOM</td><td>fresh bases</td><td>sector lows</td></tr>
-</table>
-</div>
-<div>
-<h3>Armed (Theme 2: equity shorts) + satellites</h3>
-<table>
-<tr><th>Trade</th><th>Trigger</th><th>Falsifier</th></tr>
-<tr class="sell"><td>Short SPX/NDX/DOW/RUT + DAX/CAC/FTSE/NKY</td><td>H4/H1 lower highs; copper &lt; 6.149 confirms</td><td>NDX &gt; 30,976 &middot; DOW &gt; 53,824</td></tr>
-<tr class="sell"><td>Short financial cluster (BAC/BRK/MA/AXP)</td><td>with indices</td><td>new sector highs</td></tr>
-<tr class="buy"><td>Long-vol convexity (VIX calls / VXX wrapper)</td><td>live tactically - VIX 16.8, H1 TD-stamped bottom Jul 10; full size once equity shorts fire</td><td>vol back asleep &lt; 15.4</td></tr>
-<tr class="buy"><td>Long HK50/A50 vs short NKY (market-neutral)</td><td>live</td><td>HK &lt; 22,517</td></tr>
-<tr class="sell"><td>Short GBPJPY</td><td>live</td><td>&gt; 218.01</td></tr>
-<tr class="buy"><td>Long JGB / short BUND</td><td>live</td><td>JGB &lt; 126.31 / Bund &gt; 127.67</td></tr>
-<tr class="buy"><td>EU autos basket (BMW/MBG/STLA)</td><td>live, small</td><td>the Jun-Jul lows</td></tr>
-</table>
-</div>
-</div>
-<p class="lede" style="margin-top:20px"><b>Sizing law:</b> the entire book above is four independent bets
-(dollar/hard-assets &middot; equity-short &middot; Asia rotation &middot; rates pair). Carry the total risk of four A-grade trades,
-not forty tickers. <b>Convexity law:</b> volatility has slept 104 days into a global regime turn; express the
-equity short with optionality, not linear size. <b>Discipline law:</b> every falsifier above is one price;
-when it prints, the idea is dead regardless of narrative.</p>
+<p class="note">The gold objective was raised this week from the 4,500 area to the 4,900 area on the strength
+of the June turn. The first decision is the 4,203 gate in the last week of July.</p>
 </section>
 
 <section>
-<h2>VII. The Stock Book - Every Name, Chain and Verdict</h2>
-<p class="lede">One card per Market Watch stock: the last five confirmed daily turns (&middot;H = velocity-flagged,
-&middot;TD = DeMark-stamped), the retracement position of the latest low against the full advance, and a mechanical
-verdict with its exact trigger and invalidation prices. BUY = rising-low structure; SELL = falling-high
-distribution; CONDITIONAL = a counter-trend low inside falling highs (the Palantir pattern) - dead money until
-the stated reclaim prints.</p>
-<h3>Mega Tech</h3>
-<div class="stock sell">
-<div class="sh"><b>#APPLE</b> - latest turn: <b>S 317.14</b> &middot; Jun 08 (34d) <span class="badge sell">SELL</span></div>
-<div class="ch">260.10 S Dec26&middot;TD &rarr; 169.21 B Apr08 &rarr; 288.62 S Dec03&middot;TD &rarr; 243.42 B Jan20 &rarr; 317.14 S Jun08</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 243.42; invalidation above 317.14.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#MICROSOFT</b> - latest turn: <b>B 348.95</b> &middot; Jun 25 (17d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">344.79 B Apr07&middot;TD &rarr; 555.45 S Jul31 &rarr; 356.28 B Mar30 &rarr; 466.32 S Jun01 &rarr; 348.95 B Jun25</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 348.95 and 466.32: long only on reclaim of 466.32; breakdown &lt; 348.95 resumes the downtrend.<br>Latest low retraced 37% of the 0.1100&rarr;555.45 advance - on the 38.2% of the whole advance.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#GOOGLE</b> - latest turn: <b>S 408.30</b> &middot; May 18 (55d) <span class="hot">HOT</span> <span class="badge sell">SELL</span></div>
-<div class="ch">206.90 S Feb04 &rarr; 140.57 B Apr07&middot;TD &rarr; 348.82 S Feb03&middot;H &rarr; 272.04 B Mar30&middot;H&middot;TD &rarr; 408.30 S May18&middot;H</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 272.04; invalidation above 408.30.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>#AMAZON</b> - latest turn: <b>B 225.38</b> &middot; Jun 25 (17d) <span class="badge buy">BUY</span></div>
-<div class="ch">211.03 B Oct17 &rarr; 258.60 S Nov03 &rarr; 196.00 B Feb17&middot;TD &rarr; 278.56 S May05&middot;TD &rarr; 225.38 B Jun25</div>
-<div class="vd">Uptrend intact (rising lows). Long above 225.38, stop there; next objective the 278.56 rail.<br>Latest low retraced 19% of the 0.1900&rarr;278.56 advance.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#META</b> - latest turn: <b>B 539.69</b> &middot; Jun 25 (17d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">580.79 B Nov19&middot;TD &rarr; 742.81 S Jan29 &rarr; 519.79 B Mar27 &rarr; 690.84 S Apr17 &rarr; 539.69 B Jun25</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 539.69 and 690.84: long only on reclaim of 690.84; breakdown &lt; 539.69 resumes the downtrend.<br>Latest low retraced 33% of the 22.61&rarr;795.62 advance.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>#NVIDIA</b> - latest turn: <b>B 189.75</b> &middot; Jun 29 (13d) <span class="badge buy">BUY</span></div>
-<div class="ch">86.62 B Apr07&middot;H&middot;TD &rarr; 212.04 S Oct29 &rarr; 164.18 B Mar30 &rarr; 236.39 S May14&middot;TD &rarr; 189.75 B Jun29</div>
-<div class="vd">Uptrend intact (rising lows). Long above 189.75, stop there; next objective the 236.39 rail.<br>Latest low retraced 20% of the 0.0400&rarr;236.39 advance.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#ORACLE</b> - latest turn: <b>B 137.39</b> &middot; Jul 08 (4d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">118.86 B Apr07 &rarr; 345.72 S Sep10 &rarr; 134.45 B Apr10 &rarr; 250.07 S Jun01&middot;TD &rarr; 137.39 B Jul08</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 137.39 and 250.07: long only on reclaim of 250.07; breakdown &lt; 137.39 resumes the downtrend.<br>Latest low retraced 60% of the 0.0500&rarr;345.72 advance - on the 61.8% of the whole advance.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#ADOBE</b> - latest turn: <b>B 189.85</b> &middot; Jun 18 (24d) <span class="hot">HOT TD</span> <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">475.05 B Nov01 &rarr; 557.90 S Dec09 &rarr; 223.85 B Apr10&middot;H &rarr; 275.05 S Jun01&middot;H &rarr; 189.85 B Jun18&middot;H&middot;TD</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 189.85 and 275.05: long only on reclaim of 275.05; breakdown &lt; 189.85 resumes the downtrend.<br>Latest low retraced 73% of the 0.4100&rarr;699.54 advance - on the 70.7% of the whole advance.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#NETFLIX</b> - latest turn: <b>B 70.83</b> &middot; Jun 25 (17d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">82.11 B Apr07 &rarr; 134.12 S Jun30&middot;TD &rarr; 75.01 B Feb23 &rarr; 108.95 S Apr16 &rarr; 70.83 B Jun25</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 70.83 and 108.95: long only on reclaim of 108.95; breakdown &lt; 70.83 resumes the downtrend.<br>Latest low retraced 47% of the 0.0400&rarr;134.12 advance - on the 50% of the whole advance.</div>
-</div>
-
-<h3>Semis, Hardware &amp; AI</h3>
-<div class="stock sell">
-<div class="sh"><b>#AMD</b> - latest turn: <b>S 584.18</b> &middot; Jun 30 (12d) <span class="hot">HOT</span> <span class="badge sell">SELL</span></div>
-<div class="ch">174.05 S Oct09 &rarr; 76.48 B Apr08&middot;H &rarr; 267.08 S Oct29 &rarr; 188.22 B Mar03 &rarr; 584.18 S Jun30&middot;H</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 188.22; invalidation above 584.18.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#INTEL</b> - latest turn: <b>S 142.22</b> &middot; Jun 30 (12d) <span class="hot">HOT</span> <span class="badge sell">SELL</span></div>
-<div class="ch">24.00 S Jul10 &rarr; 18.93 B Aug01&middot;TD &rarr; 54.53 S Jan22&middot;H &rarr; 40.60 B Mar30&middot;H &rarr; 142.22 S Jun30&middot;H</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 40.60; invalidation above 142.22.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#CISCO</b> - latest turn: <b>S 130.30</b> &middot; Jun 04 (38d) <span class="hot">HOT</span> <span class="badge sell">SELL</span></div>
-<div class="ch">48.72 S Jul31 &rarr; 44.59 B Aug06 &rarr; 66.43 S Feb13&middot;H &rarr; 52.06 B Apr07 &rarr; 130.30 S Jun04&middot;H</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 52.06; invalidation above 130.30.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#IBM</b> - latest turn: <b>S 332.27</b> &middot; Jun 02 (40d) <span class="hot">TD</span> <span class="badge sell">SELL</span></div>
-<div class="ch">296.16 S Jun25&middot;H &rarr; 233.36 B Aug12 &rarr; 324.90 S Nov12 &rarr; 212.22 B May13 &rarr; 332.27 S Jun02&middot;TD</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 212.22; invalidation above 332.27.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#PALANTIR</b> - latest turn: <b>B 106.28</b> &middot; Jun 25 (17d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">66.12 B Apr07&middot;TD &rarr; 207.36 S Nov03&middot;TD &rarr; 122.58 B Apr10 &rarr; 163.49 S Jun01 &rarr; 106.28 B Jun25</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 106.28 and 163.49: long only on reclaim of 163.49; breakdown &lt; 106.28 resumes the downtrend.<br>Latest low retraced 50% of the 5.92&rarr;207.36 advance - on the 50% of the whole advance.</div>
-</div>
-
-<h3>Financials</h3>
-<div class="stock sell">
-<div class="sh"><b>#JP_MORGAN</b> - latest turn: <b>S 342.97</b> &middot; Jun 25 (17d) <span class="badge sell">SELL</span></div>
-<div class="ch">280.12 S Feb19&middot;H &rarr; 201.97 B Apr07 &rarr; 337.12 S Jan05 &rarr; 278.91 B Mar12&middot;TD &rarr; 342.97 S Jun25</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 278.91; invalidation above 342.97.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#GS</b> - latest turn: <b>S 1,122.60</b> &middot; Jun 18 (24d) <span class="badge sell">SELL</span></div>
-<div class="ch">670.74 S Feb18&middot;H &rarr; 438.64 B Apr07 &rarr; 982.91 S Jan16 &rarr; 779.85 B Mar13&middot;H&middot;TD &rarr; 1,122.60 S Jun18</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 779.85; invalidation above 1,122.60.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#BOA</b> - latest turn: <b>S 60.78</b> &middot; Jul 07 (5d) <span class="badge sell">SELL</span></div>
-<div class="ch">48.04 S Nov29 &rarr; 33.04 B Apr09 &rarr; 57.51 S Jan05 &rarr; 46.08 B Mar19&middot;TD &rarr; 60.78 S Jul07</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 46.08; invalidation above 60.78.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#CITIGROUP</b> - latest turn: <b>S 147.78</b> &middot; Jun 18 (24d) <span class="hot">HOT</span> <span class="badge sell">SELL</span></div>
-<div class="ch">84.69 S Feb18 &rarr; 55.47 B Apr07&middot;TD &rarr; 125.10 S Feb09&middot;TD &rarr; 101.97 B Mar09&middot;H &rarr; 147.78 S Jun18&middot;H</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 101.97; invalidation above 147.78.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#BERKSHIRE</b> - latest turn: <b>S 512.06</b> &middot; Jul 07 (5d) <span class="badge sell">SELL</span></div>
-<div class="ch">507.11 S Sep04 &rarr; 472.88 B Nov03 &rarr; 516.51 S Nov28 &rarr; 464.09 B May05 &rarr; 512.06 S Jul07</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 512.06; target the 464.09 shelf; invalidation above 512.06.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#VISA</b> - latest turn: <b>S 361.07</b> &middot; Jul 02 (10d) <span class="hot">TD</span> <span class="badge sell">SELL</span></div>
-<div class="ch">375.36 S Jun11&middot;TD &rarr; 317.87 B Nov18 &rarr; 358.46 S Jan06 &rarr; 293.64 B Apr01&middot;H &rarr; 361.07 S Jul02&middot;TD</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 293.64; invalidation above 361.07.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#MASTERCARD</b> - latest turn: <b>S 543.19</b> &middot; Jul 07 (5d) <span class="badge sell">SELL</span></div>
-<div class="ch">589.20 S Jan08 &rarr; 480.29 B Mar27 &rarr; 532.60 S Apr29&middot;H &rarr; 464.14 B Jun03&middot;TD &rarr; 543.19 S Jul07</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 464.14; invalidation above 543.19.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#AMERICAN_E</b> - latest turn: <b>S 357.89</b> &middot; Jul 06 (6d) <span class="badge sell">SELL</span></div>
-<div class="ch">326.11 S Jan23 &rarr; 220.32 B Apr07 &rarr; 387.21 S Dec12 &rarr; 290.85 B Mar20 &rarr; 357.89 S Jul06</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 357.89; target the 290.85 shelf; invalidation above 357.89.</div>
-</div>
-
-<h3>Consumer &amp; Retail</h3>
-<div class="stock buy">
-<div class="sh"><b>#WAL_MART</b> - latest turn: <b>B 107.14</b> &middot; Jul 01 (11d) <span class="badge buy">BUY</span></div>
-<div class="ch">79.81 B Apr07 &rarr; 109.58 S Oct16 &rarr; 98.88 B Nov14&middot;H &rarr; 135.04 S May19&middot;H&middot;TD &rarr; 107.14 B Jul01</div>
-<div class="vd">Uptrend intact (rising lows). Long above 107.14, stop there; next objective the 135.04 rail.<br>Latest low retraced 21% of the 0.0300&rarr;135.04 advance.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#COCA-COLA</b> - latest turn: <b>S 109.39</b> &middot; Jul 07 (5d) <span class="hot">TD</span> <span class="badge sell">SELL</span></div>
-<div class="ch">94.11 S Nov12 &rarr; 84.63 B Jan07 &rarr; 110.87 S Feb27&middot;H&middot;TD &rarr; 89.11 B Jun01 &rarr; 109.39 S Jul07&middot;TD</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 109.39; target the 89.11 shelf; invalidation above 109.39.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>#MCDONALDS</b> - latest turn: <b>B 264.34</b> &middot; Jun 25 (17d) <span class="badge buy">BUY</span></div>
-<div class="ch">283.26 B Jun26 &rarr; 319.15 S Sep04 &rarr; 291.80 B Oct09&middot;TD &rarr; 341.49 S Mar02 &rarr; 264.34 B Jun25</div>
-<div class="vd">Fresh base at 264.34; long above it, stop the pivot; first objective 341.49.<br>Latest low retraced 30% of the 83.27&rarr;341.49 advance.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#NIKE</b> - latest turn: <b>B 40.07</b> &middot; Jul 01 (11d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">68.62 B Feb07 &rarr; 82.44 S Feb26&middot;TD &rarr; 52.28 B Apr10&middot;H &rarr; 80.17 S Aug25 &rarr; 40.07 B Jul01</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 40.07 and 80.17: long only on reclaim of 80.17; breakdown &lt; 40.07 resumes the downtrend.<br>Latest low retraced 78% of the 0.1000&rarr;179.10 advance - on the 78.6% of the whole advance.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#DISNEY</b> - latest turn: <b>B 94.58</b> &middot; Jul 09 (3d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">79.93 B Apr07 &rarr; 124.55 S Jun30 &rarr; 92.09 B Mar27 &rarr; 110.38 S May07 &rarr; 94.58 B Jul09</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 94.58 and 110.38: long only on reclaim of 110.38; breakdown &lt; 94.58 resumes the downtrend.<br>Latest low retraced 58% of the 15.15&rarr;202.89 advance.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#PG</b> - latest turn: <b>S 153.35</b> &middot; Jul 07 (5d) <span class="hot">HOT</span> <span class="badge sell">SELL</span></div>
-<div class="ch">161.54 S Sep17&middot;H &rarr; 137.52 B Jan07&middot;TD &rarr; 166.92 S Feb27 &rarr; 138.75 B Jun01 &rarr; 153.35 S Jul07&middot;H</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 153.35; target the 138.75 shelf; invalidation above 153.35.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#UNDERARM</b> - latest turn: <b>S 6.90</b> &middot; Jul 06 (6d) <span class="badge sell">SELL</span></div>
-<div class="ch">7.55 S Jul24 &rarr; 4.12 B Nov20 &rarr; 8.12 S Feb20 &rarr; 4.79 B May12 &rarr; 6.90 S Jul06</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 6.90; target the 4.79 shelf; invalidation above 6.90.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#GROUPON</b> - latest turn: <b>S 27.95</b> &middot; Jul 07 (5d) <span class="hot">TD</span> <span class="badge sell">SELL</span></div>
-<div class="ch">13.79 S Feb19&middot;TD &rarr; 9.19 B Mar11 &rarr; 42.96 S Aug07&middot;H &rarr; 9.16 B Mar13&middot;TD &rarr; 27.95 S Jul07&middot;TD</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 27.95; target the 9.16 shelf; invalidation above 27.95.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#SNAPCHAT</b> - latest turn: <b>B 4.26</b> &middot; Jun 25 (17d) <span class="hot">TD</span> <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">7.01 B Apr09&middot;TD &rarr; 10.38 S Jul22 &rarr; 3.79 B Mar27&middot;H &rarr; 6.31 S May01&middot;H &rarr; 4.26 B Jun25&middot;TD</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 4.26 and 6.31: long only on reclaim of 6.31; breakdown &lt; 4.26 resumes the downtrend.<br>Latest low retraced 99% of the 3.79&rarr;83.29 advance.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#UBER</b> - latest turn: <b>B 67.10</b> &middot; Jun 11 (31d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">60.63 B Apr07&middot;TD &rarr; 101.99 S Sep22 &rarr; 68.46 B Mar27&middot;TD &rarr; 80.83 S May07 &rarr; 67.10 B Jun11</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 67.10 and 80.83: long only on reclaim of 80.83; breakdown &lt; 67.10 resumes the downtrend.<br>Latest low retraced 40% of the 13.71&rarr;101.99 advance - on the 38.2% of the whole advance.</div>
-</div>
-
-<h3>Healthcare</h3>
-<div class="stock sell">
-<div class="sh"><b>#JNJ</b> - latest turn: <b>S 269.27</b> &middot; Jul 07 (5d) <span class="hot">HOT TD</span> <span class="badge sell">SELL</span></div>
-<div class="ch">169.86 S Mar04&middot;TD &rarr; 141.31 B Apr09 &rarr; 251.52 S Mar02&middot;H &rarr; 220.24 B May11&middot;H &rarr; 269.27 S Jul07&middot;H&middot;TD</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 220.24; invalidation above 269.27.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#PFIZER</b> - latest turn: <b>B 23.58</b> &middot; Jun 25 (17d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">25.16 B Apr26&middot;H &rarr; 31.49 S Jul30&middot;H &rarr; 20.86 B Apr09 &rarr; 28.69 S Apr02 &rarr; 23.58 B Jun25</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 23.58 and 28.69: long only on reclaim of 28.69; breakdown &lt; 23.58 resumes the downtrend.<br>Latest low retraced 93% of the 20.86&rarr;61.68 advance.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#ELILILLY</b> - latest turn: <b>S 1,247.99</b> &middot; Jul 07 (5d) <span class="badge sell">SELL</span></div>
-<div class="ch">935.63 S Mar03 &rarr; 623.78 B Aug08 &rarr; 1,133.95 S Jan08 &rarr; 850.10 B Apr29&middot;H &rarr; 1,247.99 S Jul07</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 850.10; invalidation above 1,247.99.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#TEVA</b> - latest turn: <b>S 36.97</b> &middot; May 07 (66d) <span class="badge sell">SELL</span></div>
-<div class="ch">18.28 S May08&middot;H &rarr; 14.98 B Aug01&middot;H &rarr; 37.30 S Feb03&middot;H&middot;TD &rarr; 28.28 B Mar24&middot;H &rarr; 36.97 S May07</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 36.97; target the 28.28 shelf; invalidation above 36.97.</div>
-</div>
-
-<h3>Industrials, Energy &amp; Autos</h3>
-<div class="stock sell">
-<div class="sh"><b>#BOEING</b> - latest turn: <b>S 242.23</b> &middot; May 14 (59d) <span class="badge sell">SELL</span></div>
-<div class="ch">242.33 S Jul29&middot;H &rarr; 176.64 B Nov21&middot;H &rarr; 253.94 S Jan22&middot;TD &rarr; 187.60 B Mar30&middot;TD &rarr; 242.23 S May14</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 242.23; target the 187.60 shelf; invalidation above 242.23.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#CAT</b> - latest turn: <b>S 1,072.48</b> &middot; Jun 30 (12d) <span class="badge sell">SELL</span></div>
-<div class="ch">368.90 S Jul18 &rarr; 306.86 B Aug05 &rarr; 417.98 S Nov06&middot;TD &rarr; 266.86 B Apr07&middot;TD &rarr; 1,072.48 S Jun30</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 266.86; invalidation above 1,072.48.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#GE</b> - latest turn: <b>S 382.56</b> &middot; Jul 02 (10d) <span class="badge sell">SELL</span></div>
-<div class="ch">316.52 S Oct28&middot;H &rarr; 279.82 B Dec11&middot;H &rarr; 348.18 S Feb25 &rarr; 268.85 B Apr22 &rarr; 382.56 S Jul02</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 268.85; invalidation above 382.56.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#GM</b> - latest turn: <b>S 85.31</b> &middot; Jun 16 (26d) <span class="badge sell">SELL</span></div>
-<div class="ch">61.11 S Nov25&middot;H &rarr; 41.37 B Apr07 &rarr; 87.54 S Feb04 &rarr; 70.38 B May19&middot;H &rarr; 85.31 S Jun16</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 85.31; target the 70.38 shelf; invalidation above 85.31.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>#CHEVRON</b> - latest turn: <b>B 165.10</b> &middot; Jun 30 (12d) <span class="badge buy">BUY</span></div>
-<div class="ch">131.93 B Apr11&middot;TD &rarr; 161.74 S Sep02 &rarr; 146.37 B Dec16 &rarr; 214.56 S Mar30&middot;H &rarr; 165.10 B Jun30</div>
-<div class="vd">Uptrend intact (rising lows). Long above 165.10, stop there; next objective the 214.56 rail.<br>Latest low retraced 30% of the 51.51&rarr;214.56 advance.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>#EXXONMOBIL</b> - latest turn: <b>B 134.85</b> &middot; Jun 25 (17d) <span class="badge buy">BUY</span></div>
-<div class="ch">103.61 B Mar05&middot;TD &rarr; 119.84 S Mar31 &rarr; 97.73 B Apr10&middot;H &rarr; 176.32 S Mar30&middot;H &rarr; 134.85 B Jun25</div>
-<div class="vd">Uptrend intact (rising lows). Long above 134.85, stop there; next objective the 176.32 rail.<br>Latest low retraced 28% of the 30.07&rarr;176.32 advance.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#TESLA</b> - latest turn: <b>S 453.05</b> &middot; May 13 (60d) <span class="hot">TD</span> <span class="badge sell">SELL</span></div>
-<div class="ch">138.63 B Apr22&middot;H &rarr; 214.05 B Apr07 &rarr; 498.57 S Dec22 &rarr; 337.01 B Apr07 &rarr; 453.05 S May13&middot;TD</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 453.05; target the 337.01 shelf; invalidation above 453.05.</div>
-</div>
-
-<h3>Telecom &amp; China ADR</h3>
-<div class="stock hold">
-<div class="sh"><b>#AT&amp;T</b> - latest turn: <b>B 19.88</b> &middot; Jul 02 (10d) <span class="hot">HOT</span> <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">25.84 B Jul23&middot;H &rarr; 29.76 S Sep05 &rarr; 22.93 B Jan27 &rarr; 29.40 S Mar24&middot;TD &rarr; 19.88 B Jul02&middot;H</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 19.88 and 29.40: long only on reclaim of 29.40; breakdown &lt; 19.88 resumes the downtrend.<br>Latest low retraced 79% of the 13.42&rarr;43.86 advance - on the 78.6% of the whole advance.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>#VERIZON</b> - latest turn: <b>B 40.72</b> &middot; Jul 02 (10d) <span class="badge buy">BUY</span></div>
-<div class="ch">39.01 B Feb03 &rarr; 45.70 S Aug20&middot;TD &rarr; 38.39 B Oct23 &rarr; 51.63 S Mar24 &rarr; 40.72 B Jul02</div>
-<div class="vd">Uptrend intact (rising lows). Long above 40.72, stop there; next objective the 51.63 rail.<br>Latest low retraced 48% of the 23.08&rarr;56.91 advance - on the 50% of the whole advance.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>#ALIBABA</b> - latest turn: <b>B 92.56</b> &middot; Jun 26 (16d) <span class="hot">HOT</span> <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">145.42 B Jan08 &rarr; 180.96 S Jan22 &rarr; 117.91 B Apr07&middot;H &rarr; 146.76 S May13&middot;H &rarr; 92.56 B Jun26&middot;H</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 92.56 and 146.76: long only on reclaim of 146.76; breakdown &lt; 92.56 resumes the downtrend.<br>Latest low retraced 86% of the 57.11&rarr;319.13 advance.</div>
-</div>
-
-<h3>ETFs</h3>
-<div class="stock hold">
-<div class="sh"><b>#XLE</b> - latest turn: <b>B 52.57</b> &middot; Jul 01 (11d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">74.44 B Apr09&middot;H &rarr; 92.85 S Sep26 &rarr; 43.72 B Dec16&middot;H &rarr; 63.40 S Mar30&middot;H &rarr; 52.57 B Jul01</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 52.57 and 63.40: long only on reclaim of 63.40; breakdown &lt; 52.57 resumes the downtrend.<br>Latest low retraced 62% of the 22.86&rarr;101.49 advance - on the 61.8% of the whole advance.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>#GDX</b> - latest turn: <b>B 71.83</b> &middot; Jul 08 (4d) <span class="badge buy">BUY</span></div>
-<div class="ch">25.64 B Feb28 &rarr; 44.18 S Oct22&middot;TD &rarr; 33.39 B Dec30 &rarr; 117.13 S Mar02 &rarr; 71.83 B Jul08</div>
-<div class="vd">Uptrend intact (rising lows). Long above 71.83, stop there; next objective the 117.13 rail.<br>Latest low retraced 43% of the 12.38&rarr;117.13 advance.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#EEM</b> - latest turn: <b>S 71.52</b> &middot; Jun 22 (20d) <span class="hot">HOT</span> <span class="badge sell">SELL</span></div>
-<div class="ch">45.38 S Feb21&middot;TD &rarr; 38.16 B Apr08&middot;H&middot;TD &rarr; 63.39 S Feb25&middot;H &rarr; 54.40 B Mar30&middot;H &rarr; 71.52 S Jun22&middot;H</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 54.40; invalidation above 71.52.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>#EWZ</b> - latest turn: <b>B 33.51</b> &middot; Jun 08 (34d) <span class="hot">TD</span> <span class="badge buy">BUY</span></div>
-<div class="ch">23.04 B Apr09 &rarr; 29.32 S Jul03 &rarr; 26.28 B Jul30&middot;H &rarr; 41.99 S Apr14&middot;TD &rarr; 33.51 B Jun08&middot;TD</div>
-<div class="vd">Uptrend intact (rising lows). Long above 33.51, stop there; next objective the 41.99 rail.<br>Latest low retraced 60% of the 17.28&rarr;58.05 advance - on the 61.8% of the whole advance.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>#VXXB</b> - latest turn: <b>S 39.89</b> &middot; Mar 30 (104d) <span class="hot">HOT</span> <span class="badge sell">SELL</span></div>
-<div class="ch">90.93 S Aug05 &rarr; 40.98 B Feb20 &rarr; 91.05 S Apr08&middot;TD &rarr; 25.60 B Jan09 &rarr; 39.89 S Mar30&middot;H</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 39.89; target the 25.60 shelf; invalidation above 39.89.</div>
-</div>
-
-<h3>Europe - Autos</h3>
-<div class="stock buy">
-<div class="sh"><b>_BMW.DE</b> - latest turn: <b>B 56.96</b> &middot; Jun 30 (12d) <span class="hot">HOT</span> <span class="badge buy">BUY</span></div>
-<div class="ch">62.88 B Apr09 &rarr; 91.64 S Aug22 &rarr; 77.96 B Oct10&middot;H &rarr; 97.80 S Dec09 &rarr; 56.96 B Jun30&middot;H</div>
-<div class="vd">Fresh base at 56.96; long above it, stop the pivot; first objective 97.80.<br>Latest low retraced 77% of the 36.49&rarr;123.62 advance - on the 78.6% of the whole advance.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>_DAI.DE</b> - latest turn: <b>B 42.57</b> &middot; Jun 29 (13d) <span class="hot">TD</span> <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">50.69 B Nov13 &rarr; 63.09 S Mar11 &rarr; 45.58 B Apr07 &rarr; 62.26 S Jan05 &rarr; 42.57 B Jun29&middot;TD</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 42.57 and 62.26: long only on reclaim of 62.26; breakdown &lt; 42.57 resumes the downtrend.<br>Latest low retraced 71% of the 20.98&rarr;96.03 advance - on the 70.7% of the whole advance.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>_STELLAN.FR</b> - latest turn: <b>B 4.58</b> &middot; Jul 09 (3d) <span class="hot">HOT</span> <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">8.39 B Apr08&middot;H &rarr; 12.22 S Dec05&middot;TD &rarr; 6.28 B Mar20 &rarr; 8.83 S Apr21&middot;H &rarr; 4.58 B Jul09&middot;H</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 4.58 and 8.83: long only on reclaim of 8.83; breakdown &lt; 4.58 resumes the downtrend.<br>Latest low retraced 93% of the 2.79&rarr;29.51 advance.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>_VK.FR</b> - latest turn: <b>B 19.76</b> &middot; Jul 01 (11d) <span class="badge buy">BUY</span></div>
-<div class="ch">12.89 B Jul26 &rarr; 19.82 S Feb12&middot;TD &rarr; 13.55 B Apr07&middot;TD &rarr; 27.64 S May14 &rarr; 19.76 B Jul01</div>
-<div class="vd">Uptrend intact (rising lows). Long above 19.76, stop there; next objective the 27.64 rail.<br>Latest low retraced 60% of the 0.6550&rarr;48.93 advance - on the 61.8% of the whole advance.</div>
-</div>
-
-<h3>Europe - Industrials, Tech &amp; Utilities</h3>
-<div class="stock sell">
-<div class="sh"><b>_SIEMENS</b> - latest turn: <b>S 284.50</b> &middot; Jul 03 (9d) <span class="badge sell">SELL</span></div>
-<div class="ch">252.50 S Nov12 &rarr; 215.90 B Nov19&middot;H &rarr; 275.60 S Feb12&middot;H &rarr; 198.00 B Mar23 &rarr; 284.50 S Jul03</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 198.00; invalidation above 284.50.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>_SAP.DE</b> - latest turn: <b>B 130.63</b> &middot; Jun 22 (20d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">209.55 B Sep16 &rarr; 243.95 S Oct23&middot;H &rarr; 135.29 B May13&middot;H &rarr; 173.09 S Jun02&middot;H &rarr; 130.63 B Jun22</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 130.63 and 173.09: long only on reclaim of 173.09; breakdown &lt; 130.63 resumes the downtrend.<br>Latest low retraced 65% of the 50.10&rarr;283.37 advance.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>_ADIDAS</b> - latest turn: <b>S 188.65</b> &middot; Jul 06 (6d) <span class="hot">TD</span> <span class="badge sell">SELL</span></div>
-<div class="ch">227.43 S May29&middot;H &rarr; 160.63 B Aug07 &rarr; 196.25 S Oct21 &rarr; 129.85 B Mar23 &rarr; 188.65 S Jul06&middot;TD</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 188.65; target the 129.85 shelf; invalidation above 188.65.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>_BAYER</b> - latest turn: <b>S 53.84</b> &middot; Jul 03 (9d) <span class="badge sell">SELL</span></div>
-<div class="ch">29.89 S Oct02 &rarr; 25.75 B Nov07&middot;TD &rarr; 49.74 S Feb17&middot;H&middot;TD &rarr; 32.93 B Jun02&middot;TD &rarr; 53.84 S Jul03</div>
-<div class="vd">Fresh top after the advance. Short trigger = break of 32.93; invalidation above 53.84.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>_TOTAL</b> - latest turn: <b>B 65.69</b> &middot; Jul 02 (10d) <span class="badge buy">BUY</span></div>
-<div class="ch">50.96 B Dec17&middot;H &rarr; 60.87 S Mar27&middot;TD &rarr; 47.60 B Apr09&middot;TD &rarr; 81.29 S Mar30&middot;H &rarr; 65.69 B Jul02</div>
-<div class="vd">Uptrend intact (rising lows). Long above 65.69, stop there; next objective the 81.29 rail.<br>Latest low retraced 26% of the 21.09&rarr;81.29 advance.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>_E.ON</b> - latest turn: <b>S 19.46</b> &middot; Jul 08 (4d) <span class="badge sell">SELL</span></div>
-<div class="ch">16.48 S Oct21 &rarr; 14.98 B Dec11 &rarr; 20.37 S Mar17&middot;H &rarr; 17.31 B Jun24 &rarr; 19.46 S Jul08</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 19.46; target the 17.31 shelf; invalidation above 19.46.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>_RWE.DE</b> - latest turn: <b>B 53.79</b> &middot; Jun 19 (23d) <span class="hot">HOT</span> <span class="badge buy">BUY</span></div>
-<div class="ch">27.72 B Dec19 &rarr; 37.74 S Jul22&middot;TD &rarr; 33.69 B Sep03 &rarr; 61.95 S Apr30&middot;H &rarr; 53.79 B Jun19&middot;H</div>
-<div class="vd">Uptrend intact (rising lows). Long above 53.79, stop there; next objective the 61.95 rail.<br>Latest low retraced 18% of the 16.76&rarr;61.95 advance.</div>
-</div>
-<div class="stock hold">
-<div class="sh"><b>_DTE.DE</b> - latest turn: <b>B 23.51</b> &middot; Jun 30 (12d) <span class="badge watch">CONDITIONAL</span></div>
-<div class="ch">20.70 B Apr17 &rarr; 35.88 S Mar03&middot;H &rarr; 25.97 B Nov04&middot;TD &rarr; 34.34 S Feb27 &rarr; 23.51 B Jun30</div>
-<div class="vd">Counter-trend low inside falling highs. No-man's-land between 23.51 and 34.34: long only on reclaim of 34.34; breakdown &lt; 23.51 resumes the downtrend.<br>Latest low retraced 49% of the 10.39&rarr;35.88 advance - on the 50% of the whole advance.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>_DEUTSCHE_B</b> - latest turn: <b>S 32.97</b> &middot; Jul 07 (5d) <span class="badge sell">SELL</span></div>
-<div class="ch">32.19 S Sep15&middot;H&middot;TD &rarr; 28.24 B Oct17&middot;H &rarr; 34.24 S Jan06&middot;TD &rarr; 23.80 B Mar23 &rarr; 32.97 S Jul07</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 32.97; target the 23.80 shelf; invalidation above 32.97.</div>
-</div>
-<div class="stock sell">
-<div class="sh"><b>_ACA.FR</b> - latest turn: <b>S 17.93</b> &middot; Jul 07 (5d) <span class="badge sell">SELL</span></div>
-<div class="ch">17.76 S May21&middot;TD &rarr; 15.28 B Sep02 &rarr; 19.13 S Feb27&middot;TD &rarr; 15.52 B Mar23 &rarr; 17.93 S Jul07</div>
-<div class="vd">Distribution chain (falling highs). Short rallies below 17.93; target the 15.52 shelf; invalidation above 17.93.</div>
-</div>
-<div class="stock buy">
-<div class="sh"><b>_CA.FR</b> - latest turn: <b>B 15.23</b> &middot; Jun 18 (24d) <span class="badge buy">BUY</span></div>
-<div class="ch">12.27 B Feb20 &rarr; 15.11 S May23 &rarr; 11.56 B Jun26 &rarr; 17.52 S May19&middot;TD &rarr; 15.23 B Jun18</div>
-<div class="vd">Uptrend intact (rising lows). Long above 15.23, stop there; next objective the 17.52 rail.<br>Latest low retraced 91% of the 11.56&rarr;51.07 advance.</div>
-</div>
-
+<h2>III. Currencies</h2>
+<table>
+<tr><th>Pair</th><th>Bias</th><th>Anchor</th><th>Objective</th><th>Window</th></tr>
+<tr class="b"><td>EURUSD</td><td>Long</td><td>1.1324</td><td><b>1.19</b></td><td>September</td></tr>
+<tr class="b"><td>GBPUSD</td><td>Long</td><td>1.3140</td><td><b>1.40</b></td><td>September</td></tr>
+<tr class="s"><td>USDJPY</td><td>Short</td><td>162.84</td><td><b>151.6</b></td><td>late September</td></tr>
+<tr class="b"><td>AUDUSD / NZDUSD</td><td>Long</td><td>0.6865 / 0.5624</td><td><b>0.74 / 0.62</b></td><td>Aug-Sep</td></tr>
+<tr class="s"><td>USDCAD / USDCHF</td><td>Short</td><td>1.4247 / 0.8139</td><td><b>1.35 / 0.767</b></td><td>Aug-Sep</td></tr>
+<tr class="s"><td>GBPJPY</td><td>Short</td><td>218.01</td><td><b>202.7</b></td><td>September</td></tr>
+<tr class="s"><td>EURAUD / GBPAUD</td><td>Short</td><td>1.662 / 1.936</td><td><b>1.54 / 1.80</b></td><td>September</td></tr>
+<tr class="s"><td>USDMXN</td><td>Short</td><td>17.67</td><td><b>15.5</b></td><td>September</td></tr>
+</table>
+<p class="note">The structure is one trade expressed many ways: resource and safe-haven currencies against the
+dollar and sterling. Dollar index objective 96.3; invalidation 101.55.</p>
 </section>
 
-<p class="fine">Sources: proprietary swing-structure database, 163 instruments x 7 timeframes, price histories to 1988;
-statistical validation on 52,886 pooled swing legs (walk-forward, no lookahead). EXP targets are median regime moves,
-not guarantees; time yardsticks are median structural cycles and pattern windows - tripwires, not certainties.
-Index CFD levels quoted on the trading feed; cash-index equivalents differ by futures basis converging into the
-September expiry. Private research memorandum - July 12, 2026 &middot; TylerOT (&#120143; @ot_tyler).</p>
+<section>
+<h2>IV. Indices</h2>
+<table>
+<tr><th>Index</th><th>Bias</th><th>Anchor</th><th>Objective</th><th>Clock</th><th>Invalidation</th></tr>
+<tr class="s"><td>S&amp;P 500</td><td>Short</td><td>7,648</td><td><b>6,805</b></td><td>due late August</td><td>7,648</td></tr>
+<tr class="s"><td>NASDAQ 100</td><td>Short</td><td>30,973</td><td><b>25,900</b></td><td>due late August</td><td>30,976</td></tr>
+<tr class="s"><td>DOW</td><td>Short</td><td>53,650</td><td><b>47,940</b></td><td>due early September</td><td>53,824</td></tr>
+<tr class="s"><td>RUSSELL 2000</td><td>Short</td><td>3,068</td><td><b>2,548</b></td><td>due early October</td><td>3,068</td></tr>
+<tr class="s"><td>DAX / CAC / FTSE</td><td>Short</td><td>26,064 / 8,568 / 10,764</td><td><b>22,870 / 7,626 / 9,576</b></td><td>due mid-September</td><td>the July highs</td></tr>
+<tr class="s"><td>NIKKEI 225</td><td>Short - highest conviction</td><td>73,755</td><td><b>56,900</b></td><td>due mid-September</td><td>73,755</td></tr>
+<tr class="b"><td>HANG SENG</td><td>Long - highest conviction</td><td>22,517</td><td><b>28,940</b></td><td>into October</td><td>22,517</td></tr>
+<tr class="b"><td>CHINA A50</td><td>Long</td><td>14,645</td><td><b>16,920</b></td><td>into October</td><td>14,645</td></tr>
+</table>
+<div class="callout"><b>The pair of the quarter remains East Asia against itself:</b> long Hong Kong and China
+against short Japan. Both legs carry the strongest readings on the entire index board and the trade is
+insulated from the US question.</div>
+</section>
 
-</div></body>
+<section>
+<h2>V. US Equities - The Short List</h2>
+<table>
+<tr><th>Side</th><th>Names</th><th>Notes</th></tr>
+<tr class="b"><td>Long</td><td>ADBE (obj. 307), BABA (142), ORCL (211), WMT (140), T (23), DIS (113), NKE (52), CVX (197), XOM (160), GDX (105), XLE (63), EWZ (42)</td><td>Fresh accumulations against the tide; energy and gold miners ride the commodity legs</td></tr>
+<tr class="s"><td>Short</td><td>KO (77), JNJ (225), PG (134), LLY (855), BAC (44), BRK (430), MA (474), AXP (277), V (301), AMD (312), INTC (91), CAT (823), GE (287), GM (52)</td><td>The early-July distribution cluster: financials, defensives and industrial cyclicals</td></tr>
+<tr><td>Neutral</td><td>MSFT, AMZN, META, NVDA, ORCL-adjacent mega-cap</td><td>Quality is still basing with upside readings (MSFT obj. 504 if the complex resolves up); these names sit outside both lists in this view</td></tr>
+</table>
+</section>
+
+<section>
+<h2>VI. The Full Board - Every Instrument Reviewed</h2>
+<p class="note">All 161 instruments tracked, one line each: current bias, the anchor turn it rests on,
+the objective where one can be estimated (- means the structure is too young or too sparse to project),
+and the date its own clock next expires. Stale marks an anchor that has gone quiet beyond its usual rhythm.</p>
+<h3 style="font-family:Georgia,serif;font-size:16px;margin:20px 0 2px">Indices (16)</h3>
+<table>
+<tr><th>Instrument</th><th>Bias</th><th>Anchor</th><th>Objective</th><th>Clock</th></tr>
+<tr class="s"><td>US 500</td><td>Short</td><td>Jun 15 @ 7,648.25</td><td>6,804.63</td><td>Aug 22</td></tr>
+<tr class="s"><td>US TECH100</td><td>Short</td><td>Jun 16 @ 30,973.25</td><td>25,912.03</td><td>Aug 20</td></tr>
+<tr class="s"><td>US 30</td><td>Short</td><td>Jul 07 @ 53,650.00</td><td>47,941.18</td><td>Sep 02</td></tr>
+<tr class="s"><td>US 2000</td><td>Short</td><td>Jul 01 @ 3,067.80</td><td>2,548.35</td><td>Oct 02</td></tr>
+<tr class="s"><td>GERMANY 40</td><td>Short</td><td>Jul 06 @ 26,063.50</td><td>22,867.13</td><td>Sep 13</td></tr>
+<tr class="s"><td>FRANCE 40</td><td>Short</td><td>Jul 06 @ 8,568.00</td><td>7,626.17</td><td>Sep 13</td></tr>
+<tr class="s"><td>UK 100</td><td>Short</td><td>Jul 07 @ 10,764.50</td><td>9,575.53</td><td>Sep 25</td></tr>
+<tr class="s"><td>EUROPE 50</td><td>Short</td><td>Jul 06 @ 6,461.00</td><td>5,529.71</td><td>Sep 20</td></tr>
+<tr class="s"><td>JAPAN 225</td><td>Short</td><td>Jun 22 @ 73,755.00</td><td>56,892.63</td><td>Sep 15</td></tr>
+<tr class="b"><td>HK 50</td><td>Long</td><td>Jun 26 @ 22,517.00</td><td>28,935.42</td><td>Oct 10</td></tr>
+<tr class="b"><td>CHINA A50</td><td>Long</td><td>Jul 02 @ 14,645.00</td><td>16,917.19</td><td>Oct 05</td></tr>
+<tr class="b"><td>AUS 200</td><td>Long (stale)</td><td>Mar 20 @ 8,303.00</td><td>9,444.04</td><td>-</td></tr>
+<tr class="s"><td>SWISS 20</td><td>Short</td><td>Jul 06 @ 14,466.00</td><td>12,676.63</td><td>Sep 01</td></tr>
+<tr class="s"><td>NED 25</td><td>Short</td><td>Jun 15 @ 1,096.25</td><td>915.01</td><td>Sep 03</td></tr>
+<tr class="s"><td>TAIWAN INDX</td><td>Short</td><td>Jun 22 @ 4,297.00</td><td>-</td><td>Oct 26</td></tr>
+<tr class="s"><td>CANNABIS IN</td><td>Short</td><td>Jun 09 @ 83.99</td><td>-</td><td>Sep 09</td></tr>
+</table>
+<h3 style="font-family:Georgia,serif;font-size:16px;margin:20px 0 2px">Commodities (17)</h3>
+<table>
+<tr><th>Instrument</th><th>Bias</th><th>Anchor</th><th>Objective</th><th>Clock</th></tr>
+<tr class="b"><td>GOLD</td><td>Long</td><td>Jun 30 @ 3,942.61</td><td>4,912.67</td><td>Sep 07</td></tr>
+<tr class="b"><td>SILVER</td><td>Long</td><td>Jun 24 @ 55.58</td><td>73.00</td><td>Sep 07</td></tr>
+<tr class="b"><td>PLATINUM</td><td>Long</td><td>Jul 01 @ 1,537.60</td><td>1,955.65</td><td>Sep 23</td></tr>
+<tr class="b"><td>PALLADIUM</td><td>Long</td><td>Jun 24 @ 1,152.00</td><td>1,495.04</td><td>Sep 09</td></tr>
+<tr class="s"><td>COPPER</td><td>Short</td><td>May 13 @ 6.71</td><td>4.44</td><td>Aug 08</td></tr>
+<tr class="b"><td>CrudeOIL</td><td>Long</td><td>Jul 02 @ 67.03</td><td>98.22</td><td>Oct 06</td></tr>
+<tr class="b"><td>BRENT OIL</td><td>Long</td><td>Jul 02 @ 69.43</td><td>103.34</td><td>Oct 10</td></tr>
+<tr class="s"><td>NATURAL GAS</td><td>Short</td><td>Jun 01 @ 3.39</td><td>1.96</td><td>Jul 24</td></tr>
+<tr class="b"><td>GASOLINE</td><td>Long</td><td>Jun 24 @ 2.83</td><td>3.93</td><td>Sep 22</td></tr>
+<tr class="b"><td>HEATING OIL</td><td>Long</td><td>Jun 18 @ 3.04</td><td>4.14</td><td>Sep 02</td></tr>
+<tr class="s"><td>WHEAT</td><td>Short</td><td>May 14 @ 687.75</td><td>483.63</td><td>Aug 01</td></tr>
+<tr class="b"><td>CORN</td><td>Long</td><td>Jun 25 @ 403.50</td><td>472.68</td><td>Sep 18</td></tr>
+<tr class="b"><td>SOYBEAN</td><td>Long</td><td>Jun 15 @ 1,101.75</td><td>1,282.58</td><td>Sep 07</td></tr>
+<tr class="b"><td>SUGAR#11</td><td>Long (stale)</td><td>Apr 17 @ 13.24</td><td>18.51</td><td>-</td></tr>
+<tr class="s"><td>COCOA</td><td>Short</td><td>Jul 09 @ 6,473.00</td><td>5,046.01</td><td>Oct 04</td></tr>
+<tr class="s"><td>COFFEE C</td><td>Short</td><td>Jul 06 @ 356.55</td><td>268.12</td><td>Sep 26</td></tr>
+<tr class="s"><td>COTTON#2</td><td>Short</td><td>May 13 @ 88.75</td><td>71.63</td><td>Aug 19</td></tr>
+</table>
+<h3 style="font-family:Georgia,serif;font-size:16px;margin:20px 0 2px">Rates, volatility and the dollar (3)</h3>
+<table>
+<tr><th>Instrument</th><th>Bias</th><th>Anchor</th><th>Objective</th><th>Clock</th></tr>
+<tr class="s"><td>EURO-BUND</td><td>Short</td><td>Jun 30 @ 127.67</td><td>122.02</td><td>Sep 22</td></tr>
+<tr class="b"><td>JAPAN BOND</td><td>Long</td><td>Jul 09 @ 126.31</td><td>128.05</td><td>Sep 11</td></tr>
+<tr class="s"><td>DOLLAR INDX</td><td>Short</td><td>Jun 24 @ 101.55</td><td>96.28</td><td>Sep 12</td></tr>
+</table>
+<h3 style="font-family:Georgia,serif;font-size:16px;margin:20px 0 2px">Currencies (59)</h3>
+<table>
+<tr><th>Instrument</th><th>Bias</th><th>Anchor</th><th>Objective</th><th>Clock</th></tr>
+<tr class="s"><td>AUDCAD</td><td>Short</td><td>May 13 @ 0.9957</td><td>0.9375</td><td>Jul 28</td></tr>
+<tr class="b"><td>AUDCHF</td><td>Long</td><td>Jul 02 @ 0.5538</td><td>0.6001</td><td>Sep 13</td></tr>
+<tr class="b"><td>AUDJPY</td><td>Long</td><td>Jul 02 @ 111.14</td><td>121.74</td><td>Sep 14</td></tr>
+<tr class="b"><td>AUDNZD</td><td>Long</td><td>May 31 @ 1.20</td><td>1.26</td><td>Aug 17</td></tr>
+<tr class="b"><td>AUDUSD</td><td>Long</td><td>Jun 30 @ 0.6865</td><td>0.7384</td><td>Sep 06</td></tr>
+<tr class="b"><td>CADCHF</td><td>Long</td><td>Jun 17 @ 0.5644</td><td>0.5973</td><td>Aug 17</td></tr>
+<tr class="b"><td>CADJPY</td><td>Long</td><td>Jul 03 @ 113.30</td><td>121.94</td><td>Sep 13</td></tr>
+<tr class="b"><td>CHFHUF</td><td>Long</td><td>Jun 21 @ 376.70</td><td>412.13</td><td>Sep 10</td></tr>
+<tr class="s"><td>CHFJPY</td><td>Short (stale)</td><td>Apr 21 @ 204.41</td><td>191.39</td><td>-</td></tr>
+<tr class="s"><td>COPPER</td><td>Short</td><td>May 13 @ 6.71</td><td>4.44</td><td>Aug 08</td></tr>
+<tr class="s"><td>EURAUD</td><td>Short</td><td>Jun 30 @ 1.66</td><td>1.54</td><td>Sep 14</td></tr>
+<tr class="s"><td>EURCAD</td><td>Short</td><td>Jun 19 @ 1.63</td><td>1.55</td><td>Aug 20</td></tr>
+<tr class="s"><td>EURCHF</td><td>Short</td><td>Jun 22 @ 0.9266</td><td>0.8964</td><td>Aug 23</td></tr>
+<tr class="s"><td>EURDKK</td><td>Short</td><td>Jun 24 @ 7.48</td><td>7.46</td><td>Aug 15</td></tr>
+<tr class="b"><td>EURGBP</td><td>Long</td><td>Jul 10 @ 0.8508</td><td>0.8781</td><td>Sep 18</td></tr>
+<tr class="b"><td>EURHUF</td><td>Long</td><td>Jun 16 @ 348.18</td><td>374.90</td><td>Aug 31</td></tr>
+<tr class="b"><td>EURILS</td><td>Long</td><td>May 29 @ 3.26</td><td>3.48</td><td>Sep 05</td></tr>
+<tr class="s"><td>EURJPY</td><td>Short (stale)</td><td>Apr 17 @ 187.94</td><td>175.55</td><td>-</td></tr>
+<tr class="s"><td>EURNOK</td><td>Short</td><td>Jun 29 @ 11.36</td><td>10.36</td><td>Sep 08</td></tr>
+<tr class="s"><td>EURNZD</td><td>Short</td><td>Jun 29 @ 2.02</td><td>1.90</td><td>Sep 12</td></tr>
+<tr class="s"><td>EURPLN</td><td>Short</td><td>Jul 10 @ 4.35</td><td>4.15</td><td>Sep 19</td></tr>
+<tr class="s"><td>EURRUB</td><td>Short (stale)</td><td>Dec 06 @ 100.52</td><td>89.28</td><td>-</td></tr>
+<tr class="s"><td>EURSEK</td><td>Short</td><td>Jun 29 @ 11.11</td><td>10.51</td><td>Sep 13</td></tr>
+<tr class="s"><td>EURTRY</td><td>Short</td><td>Jun 17 @ 53.95</td><td>43.98</td><td>Sep 13</td></tr>
+<tr class="b"><td>EURUSD</td><td>Long</td><td>Jun 24 @ 1.13</td><td>1.19</td><td>Sep 04</td></tr>
+<tr class="b"><td>EURZAR</td><td>Long</td><td>Jul 06 @ 18.49</td><td>20.36</td><td>Sep 25</td></tr>
+<tr class="s"><td>GBPAUD</td><td>Short</td><td>Jul 02 @ 1.94</td><td>1.80</td><td>Sep 15</td></tr>
+<tr class="s"><td>GBPCAD</td><td>Short</td><td>Jul 07 @ 1.90</td><td>1.81</td><td>Sep 20</td></tr>
+<tr class="b"><td>GBPCHF</td><td>Long</td><td>May 15 @ 1.05</td><td>1.10</td><td>Jul 13</td></tr>
+<tr class="s"><td>GBPHUF</td><td>Short</td><td>Jul 08 @ 423.28</td><td>369.38</td><td>Sep 20</td></tr>
+<tr class="s"><td>GBPILS</td><td>Short</td><td>Jul 08 @ 4.08</td><td>3.75</td><td>Sep 16</td></tr>
+<tr class="s"><td>GBPJPY</td><td>Short</td><td>Jul 09 @ 218.01</td><td>202.70</td><td>Sep 18</td></tr>
+<tr class="s"><td>GBPNZD</td><td>Short</td><td>Jul 07 @ 2.35</td><td>2.16</td><td>Sep 29</td></tr>
+<tr class="s"><td>GBPSEK</td><td>Short</td><td>Jul 08 @ 13.02</td><td>12.00</td><td>Sep 30</td></tr>
+<tr class="s"><td>GBPSGD</td><td>Short</td><td>Jul 10 @ 1.73</td><td>1.68</td><td>Sep 19</td></tr>
+<tr class="b"><td>GBPUSD</td><td>Long</td><td>Jun 24 @ 1.31</td><td>1.40</td><td>Sep 01</td></tr>
+<tr class="s"><td>NZDCAD</td><td>Short</td><td>May 29 @ 0.8271</td><td>0.7808</td><td>Aug 05</td></tr>
+<tr class="b"><td>NZDCHF</td><td>Long</td><td>Jun 25 @ 0.4553</td><td>0.4903</td><td>Sep 07</td></tr>
+<tr class="b"><td>NZDJPY</td><td>Long</td><td>Jun 26 @ 91.03</td><td>99.25</td><td>Sep 10</td></tr>
+<tr class="b"><td>NZDUSD</td><td>Long</td><td>Jun 24 @ 0.5624</td><td>0.6205</td><td>Aug 25</td></tr>
+<tr class="b"><td>PNCUSD</td><td>Long</td><td>Jun 25 @ 0.0132</td><td>0.0138</td><td>Sep 17</td></tr>
+<tr class="b"><td>SILVER</td><td>Long</td><td>Jun 24 @ 55.58</td><td>73.00</td><td>Sep 07</td></tr>
+<tr class="s"><td>USDCAD</td><td>Short</td><td>Jun 25 @ 1.42</td><td>1.35</td><td>Sep 09</td></tr>
+<tr class="s"><td>USDCHF</td><td>Short</td><td>Jun 24 @ 0.8139</td><td>0.7668</td><td>Aug 31</td></tr>
+<tr class="s"><td>USDCLP</td><td>Short (stale)</td><td>Mar 27 @ 939.00</td><td>-</td><td>-</td></tr>
+<tr class="b"><td>USDCNY</td><td>Long</td><td>May 29 @ 6.75</td><td>6.99</td><td>Sep 15</td></tr>
+<tr class="s"><td>USDDKK</td><td>Short</td><td>Jun 24 @ 6.60</td><td>6.27</td><td>Aug 29</td></tr>
+<tr class="s"><td>USDHKD</td><td>Short</td><td>Jul 02 @ 7.84</td><td>7.79</td><td>Aug 29</td></tr>
+<tr class="s"><td>USDHUF</td><td>Short</td><td>Jul 08 @ 317.21</td><td>276.85</td><td>Sep 13</td></tr>
+<tr class="s"><td>USDILS</td><td>Short</td><td>Jul 08 @ 3.06</td><td>2.73</td><td>Sep 24</td></tr>
+<tr class="s"><td>USDJPY</td><td>Short</td><td>Jul 01 @ 162.84</td><td>151.59</td><td>Sep 25</td></tr>
+<tr class="s"><td>USDMXN</td><td>Short</td><td>Jun 24 @ 17.67</td><td>15.51</td><td>Sep 02</td></tr>
+<tr class="s"><td>USDNOK</td><td>Short</td><td>Jun 30 @ 9.96</td><td>9.05</td><td>Sep 14</td></tr>
+<tr class="s"><td>USDPLN</td><td>Short</td><td>Jul 12 @ 3.81</td><td>3.50</td><td>Sep 29</td></tr>
+<tr class="s"><td>USDRUB</td><td>Short</td><td>Jul 06 @ 80.25</td><td>66.71</td><td>Oct 17</td></tr>
+<tr class="s"><td>USDSEK</td><td>Short</td><td>Jun 24 @ 9.79</td><td>9.06</td><td>Sep 02</td></tr>
+<tr class="s"><td>USDSGD</td><td>Short</td><td>Jun 24 @ 1.30</td><td>1.26</td><td>Sep 08</td></tr>
+<tr class="b"><td>USDTRY</td><td>Long (stale)</td><td>May 26 @ 31.38</td><td>36.87</td><td>-</td></tr>
+<tr class="b"><td>USDZAR</td><td>Long</td><td>Jun 15 @ 16.12</td><td>17.85</td><td>Aug 31</td></tr>
+</table>
+<h3 style="font-family:Georgia,serif;font-size:16px;margin:20px 0 2px">US equities and ETFs (51)</h3>
+<table>
+<tr><th>Instrument</th><th>Bias</th><th>Anchor</th><th>Objective</th><th>Clock</th></tr>
+<tr class="b"><td>#ADOBE</td><td>Long</td><td>Jun 18 @ 189.85</td><td>307.39</td><td>Sep 09</td></tr>
+<tr class="b"><td>#ALIBABA</td><td>Long</td><td>Jun 26 @ 92.56</td><td>142.52</td><td>Sep 14</td></tr>
+<tr class="b"><td>#AMAZON</td><td>Long</td><td>Jun 25 @ 225.38</td><td>292.39</td><td>Sep 15</td></tr>
+<tr class="s"><td>#AMD</td><td>Short</td><td>Jun 30 @ 584.18</td><td>312.00</td><td>Oct 11</td></tr>
+<tr class="s"><td>#AMERICAN E</td><td>Short</td><td>Jul 06 @ 357.89</td><td>276.78</td><td>Sep 23</td></tr>
+<tr class="s"><td>#APPLE</td><td>Short</td><td>Jun 08 @ 317.14</td><td>218.03</td><td>Aug 03</td></tr>
+<tr class="b"><td>#AT&amp;T</td><td>Long</td><td>Jul 02 @ 19.88</td><td>23.20</td><td>Sep 18</td></tr>
+<tr class="s"><td>#BERKSHIRE</td><td>Short</td><td>Jul 07 @ 512.06</td><td>430.04</td><td>Oct 06</td></tr>
+<tr class="s"><td>#BOA</td><td>Short</td><td>Jul 07 @ 60.78</td><td>43.77</td><td>Oct 11</td></tr>
+<tr class="s"><td>#BOEING</td><td>Short</td><td>May 14 @ 242.23</td><td>171.69</td><td>Aug 04</td></tr>
+<tr class="s"><td>#CAT</td><td>Short</td><td>Jun 30 @ 1,072.48</td><td>822.92</td><td>Sep 24</td></tr>
+<tr class="b"><td>#CHEVRON</td><td>Long</td><td>Jun 30 @ 165.10</td><td>197.07</td><td>Oct 06</td></tr>
+<tr class="s"><td>#CISCO</td><td>Short</td><td>Jun 04 @ 130.30</td><td>102.66</td><td>Aug 27</td></tr>
+<tr class="s"><td>#CITIGROUP</td><td>Short</td><td>Jun 18 @ 147.78</td><td>105.97</td><td>Sep 23</td></tr>
+<tr class="s"><td>#COCA-COLA</td><td>Short</td><td>Jul 07 @ 109.39</td><td>77.34</td><td>Sep 10</td></tr>
+<tr class="b"><td>#DISNEY</td><td>Long</td><td>Jul 09 @ 94.58</td><td>113.36</td><td>Oct 21</td></tr>
+<tr class="s"><td>#EEM</td><td>Short</td><td>Jun 22 @ 71.52</td><td>-</td><td>Sep 07</td></tr>
+<tr class="s"><td>#ELILILLY</td><td>Short</td><td>Jul 07 @ 1,247.99</td><td>854.63</td><td>Sep 19</td></tr>
+<tr class="b"><td>#EWZ</td><td>Long</td><td>Jun 08 @ 33.51</td><td>42.49</td><td>Sep 03</td></tr>
+<tr class="b"><td>#EXXONMOBIL</td><td>Long</td><td>Jun 25 @ 134.85</td><td>160.63</td><td>Sep 11</td></tr>
+<tr class="b"><td>#GDX</td><td>Long</td><td>Jul 08 @ 71.83</td><td>104.65</td><td>Sep 27</td></tr>
+<tr class="s"><td>#GE</td><td>Short</td><td>Jul 02 @ 382.56</td><td>286.83</td><td>Sep 16</td></tr>
+<tr class="s"><td>#GM</td><td>Short</td><td>Jun 16 @ 85.31</td><td>51.96</td><td>Sep 11</td></tr>
+<tr class="s"><td>#GOOGLE</td><td>Short</td><td>May 18 @ 408.30</td><td>315.95</td><td>Aug 11</td></tr>
+<tr class="s"><td>#GROUPON</td><td>Short</td><td>Jul 07 @ 27.95</td><td>13.57</td><td>Oct 10</td></tr>
+<tr class="s"><td>#GS</td><td>Short</td><td>Jun 18 @ 1,122.60</td><td>796.07</td><td>Sep 20</td></tr>
+<tr class="s"><td>#IBM</td><td>Short</td><td>Jun 02 @ 332.27</td><td>242.79</td><td>Aug 26</td></tr>
+<tr class="s"><td>#INTEL</td><td>Short</td><td>Jun 30 @ 142.22</td><td>90.99</td><td>Sep 04</td></tr>
+<tr class="s"><td>#JNJ</td><td>Short</td><td>Jul 07 @ 269.27</td><td>225.31</td><td>Sep 20</td></tr>
+<tr class="s"><td>#JP MORGAN</td><td>Short</td><td>Jun 25 @ 342.97</td><td>284.20</td><td>Sep 10</td></tr>
+<tr class="s"><td>#MASTERCARD</td><td>Short</td><td>Jul 07 @ 543.19</td><td>473.59</td><td>Sep 06</td></tr>
+<tr class="b"><td>#MCDONALDS</td><td>Long</td><td>Jun 25 @ 264.34</td><td>311.54</td><td>Oct 01</td></tr>
+<tr class="b"><td>#META</td><td>Long</td><td>Jun 25 @ 539.69</td><td>700.10</td><td>Sep 02</td></tr>
+<tr class="b"><td>#MICROSOFT</td><td>Long</td><td>Jun 25 @ 348.95</td><td>503.80</td><td>Sep 13</td></tr>
+<tr class="b"><td>#NETFLIX</td><td>Long</td><td>Jun 25 @ 70.83</td><td>96.19</td><td>Aug 27</td></tr>
+<tr class="b"><td>#NIKE</td><td>Long</td><td>Jul 01 @ 40.07</td><td>51.68</td><td>Sep 01</td></tr>
+<tr class="b"><td>#NVIDIA</td><td>Long</td><td>Jun 29 @ 189.75</td><td>257.08</td><td>Aug 24</td></tr>
+<tr class="b"><td>#ORACLE</td><td>Long</td><td>Jul 08 @ 137.39</td><td>211.58</td><td>Sep 11</td></tr>
+<tr class="b"><td>#PALANTIR</td><td>Long</td><td>Jun 25 @ 106.28</td><td>-</td><td>Aug 16</td></tr>
+<tr class="b"><td>#PFIZER</td><td>Long</td><td>Jun 25 @ 23.58</td><td>29.19</td><td>Sep 01</td></tr>
+<tr class="s"><td>#PG</td><td>Short</td><td>Jul 07 @ 153.35</td><td>133.57</td><td>Sep 13</td></tr>
+<tr class="b"><td>#SNAPCHAT</td><td>Long</td><td>Jun 25 @ 4.26</td><td>-</td><td>Sep 23</td></tr>
+<tr class="s"><td>#TESLA</td><td>Short</td><td>May 13 @ 453.05</td><td>231.23</td><td>Jul 26</td></tr>
+<tr class="s"><td>#TEVA</td><td>Short</td><td>May 07 @ 36.97</td><td>28.13</td><td>Jul 27</td></tr>
+<tr class="b"><td>#UBER</td><td>Long</td><td>Jun 11 @ 67.10</td><td>-</td><td>Aug 27</td></tr>
+<tr class="s"><td>#UNDERARM</td><td>Short</td><td>Jul 06 @ 6.90</td><td>-</td><td>Oct 20</td></tr>
+<tr class="b"><td>#VERIZON</td><td>Long</td><td>Jul 02 @ 40.72</td><td>47.46</td><td>Sep 16</td></tr>
+<tr class="s"><td>#VISA</td><td>Short</td><td>Jul 02 @ 361.07</td><td>300.77</td><td>Sep 14</td></tr>
+<tr class="s"><td>#VXXB</td><td>Short (stale)</td><td>Mar 30 @ 39.89</td><td>-</td><td>-</td></tr>
+<tr class="b"><td>#WAL MART</td><td>Long</td><td>Jul 01 @ 107.14</td><td>140.10</td><td>Sep 15</td></tr>
+<tr class="b"><td>#XLE</td><td>Long</td><td>Jul 01 @ 52.57</td><td>63.52</td><td>Sep 24</td></tr>
+</table>
+<h3 style="font-family:Georgia,serif;font-size:16px;margin:20px 0 2px">European equities (15)</h3>
+<table>
+<tr><th>Instrument</th><th>Bias</th><th>Anchor</th><th>Objective</th><th>Clock</th></tr>
+<tr class="s"><td>ACA.FR</td><td>Short</td><td>Jul 07 @ 17.93</td><td>14.71</td><td>Sep 27</td></tr>
+<tr class="s"><td>ADIDAS</td><td>Short</td><td>Jul 06 @ 188.65</td><td>-</td><td>Sep 14</td></tr>
+<tr class="s"><td>BAYER</td><td>Short</td><td>Jul 03 @ 53.84</td><td>35.64</td><td>Sep 30</td></tr>
+<tr class="b"><td>BMW.DE</td><td>Long</td><td>Jun 30 @ 56.96</td><td>72.38</td><td>Sep 16</td></tr>
+<tr class="b"><td>CA.FR</td><td>Long</td><td>Jun 18 @ 15.23</td><td>18.71</td><td>Sep 03</td></tr>
+<tr class="b"><td>DAI.DE</td><td>Long</td><td>Jun 29 @ 42.57</td><td>54.28</td><td>Oct 27</td></tr>
+<tr class="s"><td>DEUTSCHE B</td><td>Short</td><td>Jul 07 @ 32.97</td><td>23.51</td><td>Oct 21</td></tr>
+<tr class="b"><td>DTE.DE</td><td>Long</td><td>Jun 30 @ 23.51</td><td>-</td><td>Oct 14</td></tr>
+<tr class="s"><td>E.ON</td><td>Short</td><td>Jul 08 @ 19.46</td><td>17.15</td><td>Sep 09</td></tr>
+<tr class="b"><td>RWE.DE</td><td>Long</td><td>Jun 19 @ 53.79</td><td>66.52</td><td>Aug 14</td></tr>
+<tr class="b"><td>SAP.DE</td><td>Long</td><td>Jun 22 @ 130.63</td><td>179.83</td><td>Sep 11</td></tr>
+<tr class="s"><td>SIEMENS</td><td>Short</td><td>Jul 03 @ 284.50</td><td>220.75</td><td>Sep 27</td></tr>
+<tr class="b"><td>STELLAN.FR</td><td>Long</td><td>Jul 09 @ 4.58</td><td>6.56</td><td>Oct 27</td></tr>
+<tr class="b"><td>TOTAL</td><td>Long</td><td>Jul 02 @ 65.69</td><td>78.38</td><td>Sep 29</td></tr>
+<tr class="b"><td>VK.FR</td><td>Long</td><td>Jul 01 @ 19.76</td><td>26.37</td><td>Sep 18</td></tr>
+</table>
+</section>
+
+<section>
+<h2>VII. Time Windows</h2>
+<table>
+<tr><th>Window</th><th>What is expected</th></tr>
+<tr><td><b>July 24-27</b></td><td>The first tell. Several independent clocks expire together in this window. In focus: gold at the 4,203 gate, failed bounces in the index complex, natural gas and Tesla at their own deadlines</td></tr>
+<tr><td><b>Late Aug - early Oct</b></td><td>The main window. The majority of the markets tracked here have their next structural decision due between Aug 20 and Oct 11, with the center of mass in the first three weeks of September</td></tr>
+<tr><td><b>Oct 5-30</b></td><td>First objectives: index downside targets and metal/energy upside targets begin to complete</td></tr>
+<tr><td><b>Nov - mid Dec</b></td><td>Consolidation and secondary lows; the alternate gold accumulation window if 3,943 gives way first</td></tr>
+<tr><td><b>Late Jan 2027</b></td><td>Completion cluster: gold in the high 4,000s, euro near 1.20, US indices at their major shelves</td></tr>
+</table>
+</section>
+
+<section>
+<h2>VIII. What Would Prove This Wrong</h2>
+<p class="lede">Every view above dies at one price: Nasdaq above 30,976 or Dow above 53,824 ends the index
+short thesis; gold under 3,943 delays but does not cancel the metal thesis (destination unchanged, entry
+moves to 3,650-3,760); dollar index above 101.55 ends the currency thesis; copper above 6.76 ends its short.
+If the July 24-27 window passes with no stress at all, the September window inherits the full decision.
+These lines are published so this page can be graded - the next edition will score every call on it.</p>
+</section>
+
+<p class="fine">Independent market commentary, NOT investment advice (see disclaimer at top) &middot;
+July 13, 2026 &middot; TylerOT &middot; &#120143; @ot_tyler &middot; Published reports are never edited after release.<br>
+Price data: CFD feed provided by Ava Trade Ltd. CFD prices may differ from cash-index and futures levels by
+the prevailing basis; all levels in this report reference the CFD feed.</p>
+
+</div>
+</body>
 </html>
