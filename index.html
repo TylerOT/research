@@ -1,87 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TylerOT Research</title>
-<meta name="description" content="Independent cross-asset market research. Weekly reports with levels, dates and direction.">
-<meta property="og:title" content="TylerOT Research">
-<meta property="og:description" content="Independent cross-asset market research. Weekly reports with levels, dates and direction.">
-<meta property="og:type" content="website">
 <style>
-  :root{--paper:#FBFAF6;--ink:#151F2B;--mut:#5D6B79;--rule:#DAD6CB;
-        --gold:#8a6d1d;--amb:#BD8A2F;--up:#177A4C;--dn:#B23A2E;--panel:#F3F1EA}
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--paper);color:var(--ink);
-       font:16px/1.55 -apple-system,"Segoe UI",Roboto,Arial,sans-serif}
-  .wrap{max-width:860px;margin:0 auto;padding:60px 24px 90px}
-  h1{font-family:Georgia,serif;font-size:44px;line-height:1.05;margin:0}
-  .kick{font:700 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.22em;
-        color:var(--gold);text-transform:uppercase;margin-bottom:14px}
-  .byline{font:13px ui-monospace,Menlo,monospace;color:var(--mut);margin-top:14px}
-  .byline a{color:var(--amb);text-decoration:none;font-weight:700}
-  .byline a:hover{text-decoration:underline}
-  .intro{color:var(--mut);font-size:17px;max-width:640px;margin-top:20px}
-  h2{font-family:Georgia,serif;font-size:22px;border-bottom:3px solid var(--ink);
-     padding-bottom:8px;margin:54px 0 6px}
-  .report{display:block;text-decoration:none;color:inherit;
-          border:1px solid var(--rule);border-left:4px solid var(--amb);
-          border-radius:6px;background:#fff;padding:16px 20px;margin-top:14px;
-          transition:transform .08s ease, box-shadow .08s ease}
-  .report:hover{transform:translateY(-1px);box-shadow:0 3px 14px rgba(21,31,43,.08)}
-  .rdate{font:700 11px ui-monospace,Menlo,monospace;letter-spacing:.14em;
-         color:var(--gold);text-transform:uppercase}
-  .rtitle{font-family:Georgia,serif;font-size:21px;font-weight:700;margin:4px 0 2px}
-  .rdesc{font-size:14.5px;color:var(--mut)}
-  .foot{font-size:12.5px;color:var(--mut);border-top:1px solid var(--rule);
-        margin-top:64px;padding-top:16px}
+  :root{--bg:#faf8f3;--panel:#f1ede3;--ink:#26292f;--dim:#6b7280;--acc:#8a6d1f;--red:#b3402e;--grn:#1e7a4a;--line:#ddd6c4}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Georgia,'Times New Roman',serif}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 80px}
+  .brand{font:700 14px/1 Verdana,Arial,sans-serif;letter-spacing:.24em;color:var(--acc);text-transform:uppercase}
+  h1{font-size:30px;margin:14px 0 4px}
+  .sub{color:var(--dim);font:13px Verdana,Arial,sans-serif;margin-bottom:36px}
+  .report{display:block;background:var(--panel);border:1px solid var(--line);border-radius:8px;
+          padding:18px 20px;margin:0 0 16px;text-decoration:none;color:var(--ink)}
+  .report:hover{border-color:var(--acc)}
+  .rdate{color:var(--acc);font:12px Verdana,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+  .rtitle{font-size:19px;font-weight:bold;margin:6px 0 4px}
+  .rdesc{color:var(--dim);font-size:14.5px}
+  @media (max-width:640px){.wrap{padding:32px 14px 60px}h1{font-size:24px}}
+footer{margin-top:48px;border-top:1px solid var(--line);padding-top:14px;color:var(--dim);font:12.5px Verdana,Arial,sans-serif}
 </style>
 </head>
 <body>
-<div style="background:#151F2B;color:#FBFAF6;padding:12px 20px;text-align:center;
-            font:700 12.5px/1.6 -apple-system,'Segoe UI',Roboto,Arial,sans-serif">
-<b>DISCLAIMER:</b> Independent market commentary and opinion for informational purposes only.
-<b>NOT financial or investment advice.</b> No recommendation or solicitation to trade any instrument.
-Trading involves substantial risk of loss. Consult a licensed financial advisor. You are solely
-responsible for your own decisions.
-</div>
 <div class="wrap">
+  <div class="brand">TylerOT Research</div>
+  <h1>Research Archive</h1>
+  <div class="sub">Mechanical multi-timeframe divergence census. Published editions, newest first.</div>
 
-  <div class="kick">Independent Cross-Asset Research</div>
-  <h1>TylerOT Research</h1>
-  <div class="byline">Author: <b>TylerOT</b> &nbsp;&middot;&nbsp;
-    <a href="https://x.com/ot_tyler" target="_blank" rel="noopener">&#120143; @ot_tyler</a></div>
-  <p class="intro">Weekly cross-asset strategy notes covering commodities, currencies, equities and
-  volatility. Every report carries explicit levels, time windows and invalidation prices, and every
-  past report stays published exactly as written.</p>
+  <a class="report" href="reports/2026-07-22-outlook.html">
+    <div class="rdate">July 22, 2026</div>
+    <div class="rtitle">Market Outlook: The Monthlies Printed</div>
+    <div class="rdesc">Second edition. Scorecard on July 13 (six hits, two misses, two pending), the full-degree
+    upgrade, the fortress crack, and the complete 162-instrument board with a delta column: 21 flips marked. New: VIX with a hard 28.4 objective, Bitcoin and Ethereum at weekly degree, and a Weekly Board measuring the strongest signals one degree up.</div>
+  </a>
 
-  <h2>Reports</h2>
-
-  <!-- ============================================================
-       WEEKLY ROUTINE: copy the block below, paste it ABOVE the
-       existing ones, change the href, date, title and description.
-       Newest report always goes on top.
-  ============================================================ -->
+  <a class="report" href="reports/2026-07-13-outlook.html">
+    <div class="rdate">July 13, 2026</div>
+    <div class="rtitle">Market Outlook: Bias, Targets and Time Windows</div>
+    <div class="rdesc">The full board: 161 instruments reviewed with bias, degree, objectives and clocks.
+    Dashboard breadth, volatility confirmation, and the July 24-27 tell ahead of the September window.</div>
+  </a>
 
   <a class="report" href="reports/2026-07-12-golden-report.html">
     <div class="rdate">July 12, 2026</div>
-    <div class="rtitle">Market Analysis - Week of July 13, 2026: One Wave Through 164 Markets</div>
-    <div class="rdesc">Global rotation map: sectors, FX strength ladder, stock book with buy/sell
-    triggers, volatility, and the road to January 2027. First tell: July 26-27. The window: September 5-28.</div>
+    <div class="rtitle">The Golden Report</div>
+    <div class="rdesc">Gold, the crash geometry and the cycle map: rotations, retracements and the road ahead.</div>
   </a>
 
-  <!-- TEMPLATE for next week (copy, un-comment, edit):
-  <a class="report" href="reports/2026-07-19-golden-report.html">
-    <div class="rdate">July 19, 2026</div>
-    <div class="rtitle">Report title here</div>
-    <div class="rdesc">One or two sentences on what this edition covers and grades.</div>
+  <!-- TEMPLATE for next edition
+  <a class="report" href="reports/YYYY-MM-DD-title.html">
+    <div class="rdate">Month DD, 2026</div>
+    <div class="rtitle">Title</div>
+    <div class="rdesc">One-line description.</div>
   </a>
   -->
 
-  <div class="foot">Independent research notes. Not investment advice. All levels and dates are the
-  author's analysis as of each report's publication date; published reports are never edited after release.
-  &copy; 2026 TylerOT &nbsp;&middot;&nbsp; &#120143; @ot_tyler</div>
-
+  <footer>TylerOT Research &middot; Independent research notes. Not investment advice.</footer>
 </div>
 </body>
 </html>
